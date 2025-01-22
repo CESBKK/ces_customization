@@ -14,7 +14,8 @@ required_apps = ["erpnext"]
 fixtures = [
     {
         "dt": "Custom Field",
-        "filters": [["module", "=", "ces_customization"]]
+        # "filters": [["module", "=", "ces_customization"]]
+        "filters": [["fieldname", "like", "ces%"]]
     },
 ]
 
