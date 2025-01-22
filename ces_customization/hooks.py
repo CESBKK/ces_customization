@@ -14,10 +14,9 @@ required_apps = ["erpnext"]
 fixtures = [
     {
         "dt": "Custom Field",
-        "filters": [["fieldname", "like", "ces%"]]
+        "filters": [["module", "=", "ces_customization"]]
     },
 ]
-
 
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [
@@ -47,12 +46,17 @@ fixtures = [
 # include js, css files in header of web form
 # webform_include_js = {"doctype": "public/js/doctype.js"}
 # webform_include_css = {"doctype": "public/css/doctype.css"}
+# webform_include_js = {"Journal Entry": "public/js/journal_entry.js"}
 
 # include js in page
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {
+	"Journal Entry": "public/js/journal_entry.js",
+}
+
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -142,6 +146,10 @@ fixtures = [
 # 	"ToDo": "custom_app.overrides.CustomToDo"
 # }
 
+override_doctype_class = {
+    "Journal Entry": "ces_customization.overrides.journal_entry.ces_JournalEntry"
+}
+
 # Document Events
 # ---------------
 # Hook on document methods and events
@@ -153,6 +161,21 @@ fixtures = [
 # 		"on_trash": "method"
 # 	}
 # }
+
+doc_events = {
+	"Quotation": {
+		"on_trash": "ces_customization.custom.sales.on_trash",
+	},
+	"Sales Order": {
+		"on_trash": "ces_customization.custom.sales.on_trash",
+	},
+	"Sales Invoice": {
+		"on_trash": "ces_customization.custom.sales.on_trash",
+	},
+    # "Journal Entry": {
+    #     "before_naming" : "ces_customization.overrides.journal_entry.ces_JournalEntry.before_naming"
+    # },
+}
 
 # Scheduled Tasks
 # ---------------
