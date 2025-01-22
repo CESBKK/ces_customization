@@ -1,10 +1,10 @@
 from datetime import datetime
-from erpnext.accounts.doctype.journal_entry.journal_entry import JournalEntry
+from erpnext.accounts.doctype.payment_entry.payment_entry import PaymentEntry
 from frappe.utils.data import get_datetime
 
 
-class ces_JournalEntry(JournalEntry):
-    '''This class populate Virtual DocField Data which we added to Journal Entry DocType'''
+class ces_PaymentEntry(PaymentEntry):
+    '''This class populate Virtual DocField Data which we added to Payment Entry DocType'''
     @property
     def ces_pd_serie(self):
         r = self.populate_pd_serie()

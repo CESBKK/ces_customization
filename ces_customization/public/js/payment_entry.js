@@ -1,7 +1,7 @@
 // Copyright (c) 2025, Cloud Engineering and Services Co., Ltd. and contributors.
 // For license information, please see license.txt
 
-frappe.ui.form.on("Journal Entry", {
+frappe.ui.form.on("Payment Entry", {
     posting_date(frm) {
         //Trigger update CES feilds whenever posting_date changed!
         frm.trigger('update_ces_fields');

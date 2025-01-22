@@ -14,7 +14,6 @@ required_apps = ["erpnext"]
 fixtures = [
     {
         "dt": "Custom Field",
-        # "filters": [["module", "=", "ces_customization"]]
         "filters": [["fieldname", "like", "ces%"]]
     },
 ]
@@ -56,6 +55,7 @@ fixtures = [
 # doctype_js = {"doctype" : "public/js/doctype.js"}
 doctype_js = {
 	"Journal Entry": "public/js/journal_entry.js",
+    "Payment Entry": "public/js/payment_entry.js",
 }
 
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
@@ -148,7 +148,8 @@ doctype_js = {
 # }
 
 override_doctype_class = {
-    "Journal Entry": "ces_customization.overrides.journal_entry.ces_JournalEntry"
+    "Journal Entry": "ces_customization.overrides.journal_entry.ces_JournalEntry",
+    "Payment Entry": "ces_customization.overrides.payment_entry.ces_PaymentEntry",
 }
 
 # Document Events
@@ -173,9 +174,6 @@ doc_events = {
 	"Sales Invoice": {
 		"on_trash": "ces_customization.custom.sales.on_trash",
 	},
-    # "Journal Entry": {
-    #     "before_naming" : "ces_customization.overrides.journal_entry.ces_JournalEntry.before_naming"
-    # },
 }
 
 # Scheduled Tasks
