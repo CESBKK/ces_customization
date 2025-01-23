@@ -14,37 +14,37 @@ class ces_JournalEntry(JournalEntry):
     @property
     def ces_pd_yyyy_be(self):
         r = self.populate_pd_serie(year_type='BE')
-        return (r['yyyy'])
+        return r['yyyy']
 
 
     @property
     def ces_pd_yy_be(self):
         r = self.populate_pd_serie(year_type='BE')
-        return (r['yy'])
+        return r['yy']
 
 
     @property
     def ces_pd_yyyy(self):
         r = self.populate_pd_serie()
-        return (r['yyyy'])
+        return r['yyyy']
 
 
     @property
     def ces_pd_yy(self):
         r = self.populate_pd_serie()
-        return (r['yy'])
+        return r['yy']
 
 
     @property
     def ces_pd_mm(self):
         r = self.populate_pd_serie()
-        return (r['mm'])
+        return r['mm']
 
 
     @property
     def ces_pd_dd(self):
         r = self.populate_pd_serie()
-        return (r['dd'])
+        return r['dd']
 
 
     @property
