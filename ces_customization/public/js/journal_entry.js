@@ -19,17 +19,15 @@ frappe.ui.form.on("Journal Entry", {
         // Populate posting date with BE year
         const be_date = `${pd_year_be}-${pd_month.toString().padStart(2,'0')}-${pd_day.toString().padStart(2,'0')}`;
         
-        // Populate pd_serie in YYMM-DD format using AD year.
-        const pd_serie = `${pd_year%100}${pd_month.toString().padStart(2,'0')}-${pd_day.toString().padStart(2,'0')}`
-        
-        // Populate pd_serie in YYMM-DD format using BE year.
-        const pd_serie_th = `${pd_year_be%100}${pd_month.toString().padStart(2,'0')}-${pd_day.toString().padStart(2,'0')}`
-
         // Set value to each Virtual DocField
         frm.set_value('ces_thai_month_abbr', th_month_s[pd_month]);
         frm.set_value('ces_thai_month', th_month_l[pd_month]);
         frm.set_value('ces_posting_date_be', be_date);
-        frm.set_value('ces_pd_serie', pd_serie);
-        frm.set_value('ces_pd_serie_th', pd_serie_th);
+        frm.set_value('ces_pd_yyyy_be', `${pd_year_be}`);
+        frm.set_value('ces_pd_yy_be', `${pd_year_be%100}`);
+        frm.set_value('ces_pd_yyyy', `${pd_year}`);
+        frm.set_value('ces_pd_yy', `${pd_year%100}`);
+        frm.set_value('ces_pd_mm', `${pd_month.toString().padStart(2,'0')}`);
+        frm.set_value('ces_pd_dd', `${pd_day.toString().padStart(2,'0')}`);
     },
 });

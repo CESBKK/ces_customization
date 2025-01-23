@@ -6,21 +6,45 @@ from frappe.utils.data import get_datetime
 class ces_JournalEntry(JournalEntry):
     '''This class populate Virtual DocField Data which we added to Journal Entry DocType'''
     @property
-    def ces_pd_serie(self):
-        r = self.populate_pd_serie()
-        return f'{r['yy']}{r['mm']}-{r['dd']}'
-
-
-    @property
-    def ces_pd_serie_th(self):
-        r = self.populate_pd_serie(year_type='BE')
-        return f'{r['yy']}{r['mm']}-{r['dd']}'
-
-
-    @property
     def ces_posting_date_be(self):
         r = self.populate_pd_serie(year_type='BE')
         return datetime(int(r['yyyy']), int(r['mm']), int(r['dd']))
+
+
+    @property
+    def ces_pd_yyyy_be(self):
+        r = self.populate_pd_serie(year_type='BE')
+        return (r['yyyy'])
+
+
+    @property
+    def ces_pd_yy_be(self):
+        r = self.populate_pd_serie(year_type='BE')
+        return (r['yy'])
+
+
+    @property
+    def ces_pd_yyyy(self):
+        r = self.populate_pd_serie()
+        return (r['yyyy'])
+
+
+    @property
+    def ces_pd_yy(self):
+        r = self.populate_pd_serie()
+        return (r['yy'])
+
+
+    @property
+    def ces_pd_mm(self):
+        r = self.populate_pd_serie()
+        return (r['mm'])
+
+
+    @property
+    def ces_pd_dd(self):
+        r = self.populate_pd_serie()
+        return (r['dd'])
 
 
     @property
