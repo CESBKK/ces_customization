@@ -59,6 +59,11 @@ class ces_PaymentEntry(PaymentEntry):
         return r['th_mmmm']
 
 
+    @property
+    def ces_pmt_type(self):
+        pass
+
+
     def populate_pd_serie(self, year_type='AD'):
         # make sure that the supply posting date is in datetime type
         # sometimes Frappe just return datetime as str

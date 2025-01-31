@@ -2,6 +2,10 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on("Payment Entry", {
+    refresh(frm){
+        frm.trigger('update_payment_type');
+        frm.trigger('update_ces_fields');
+    },
     posting_date(frm) {
         //Trigger update CES feilds whenever posting_date changed!
         frm.trigger('update_ces_fields');
@@ -29,5 +33,13 @@ frappe.ui.form.on("Payment Entry", {
         frm.set_value('ces_pd_yy', `${pd_year%100}`);
         frm.set_value('ces_pd_mm', `${pd_month.toString().padStart(2,'0')}`);
         frm.set_value('ces_pd_dd', `${pd_day.toString().padStart(2,'0')}`);
+    },
+    payment_type(frm) {
+        frm.trigger('update_payment_type');
+    },
+    update_payment_type(frm) {
+        if (frm.doc.payment_type === 'Pay') frm.set_value('ces_pmt_type', 'PV');
+        if (frm.doc.payment_type === 'Receive') frm.set_value('ces_pmt_type', 'RV');
+        if (frm.doc.payment_type === 'Internal Transfer') frm.set_value('ces_pmt_type', 'ITV');
     },
 });

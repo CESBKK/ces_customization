@@ -2,6 +2,9 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on("Journal Entry", {
+    refresh(frm){
+        frm.trigger('update_ces_fields');
+    },
     posting_date(frm) {
         //Trigger update CES feilds whenever posting_date changed!
         frm.trigger('update_ces_fields');
