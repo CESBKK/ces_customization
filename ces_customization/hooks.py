@@ -290,5 +290,5 @@ naming_series_variables = {
     "CES-TD-WW": "ces_customization.custom.naming.parse_naming_series_variable",
     "CES-TD-MM": "ces_customization.custom.naming.parse_naming_series_variable",
     "CES-TD-DD": "ces_customization.custom.naming.parse_naming_series_variable",
-    "CES-PMT-PYPE": "ces_customization.custom.naming.parse_naming_series_variable",
+    "CES-PMT-TYPE": "ces_customization.custom.naming.parse_naming_series_variable",
 }
