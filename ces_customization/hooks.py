@@ -54,7 +54,7 @@ fixtures = [
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
 doctype_js = {
-	"Journal Entry": "public/js/journal_entry.js",
+    "Journal Entry": "public/js/journal_entry.js",
     "Payment Entry": "public/js/payment_entry.js",
 }
 
@@ -125,7 +125,7 @@ doctype_js = {
 # ------------------
 # See frappe.core.notifications.get_notification_config
 
-# notification_config = "ces_customization.notifications.get_notification_config"
+# notification_config = ces_customization.notifications.get_notification_config"
 
 # Permissions
 # -----------
@@ -165,15 +165,15 @@ override_doctype_class = {
 # }
 
 doc_events = {
-	"Quotation": {
-		"on_trash": "ces_customization.custom.sales.on_trash",
-	},
-	"Sales Order": {
-		"on_trash": "ces_customization.custom.sales.on_trash",
-	},
-	"Sales Invoice": {
-		"on_trash": "ces_customization.custom.sales.on_trash",
-	},
+    "Quotation": {
+        "on_trash": "ces_customization.custom.sales.on_trash",
+    },
+    "Sales Order": {
+        "on_trash": "ces_customization.custom.sales.on_trash",
+    },
+    "Sales Invoice": {
+        "on_trash": "ces_customization.custom.sales.on_trash",
+    },
 }
 
 # Scheduled Tasks
@@ -206,7 +206,8 @@ doc_events = {
 # ------------------------------
 #
 # override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "ces_customization.event.get_events"
+# 	"frappe.desk.doctype.event.event.get_events":
+# 		"ces_customization.event.get_events"
 # }
 #
 # each overriding function accepts a `data` argument;
@@ -273,3 +274,21 @@ doc_events = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+# function should expect the variable and doc as arguments
+naming_series_variables = {
+    "CES-PD-YY": "ces_customization.custom.naming.parse_naming_series_variable",
+    "CES-PD-YYYY": "ces_customization.custom.naming.parse_naming_series_variable",
+    "CES-PD-YYBE": "ces_customization.custom.naming.parse_naming_series_variable",
+    "CES-PD-YYYYBE": "ces_customization.custom.naming.parse_naming_series_variable",
+    "CES-PD-WW": "ces_customization.custom.naming.parse_naming_series_variable",
+    "CES-PD-MM": "ces_customization.custom.naming.parse_naming_series_variable",
+    "CES-PD-DD": "ces_customization.custom.naming.parse_naming_series_variable",
+    "CES-TD-YY": "ces_customization.custom.naming.parse_naming_series_variable",
+    "CES-TD-YYYY": "ces_customization.custom.naming.parse_naming_series_variable",
+    "CES-TD-YYBE": "ces_customization.custom.naming.parse_naming_series_variable",
+    "CES-TD-YYYYBE": "ces_customization.custom.naming.parse_naming_series_variable",
+    "CES-TD-WW": "ces_customization.custom.naming.parse_naming_series_variable",
+    "CES-TD-MM": "ces_customization.custom.naming.parse_naming_series_variable",
+    "CES-TD-DD": "ces_customization.custom.naming.parse_naming_series_variable",
+    "CES-PMT-PYPE": "ces_customization.custom.naming.parse_naming_series_variable",
+}
