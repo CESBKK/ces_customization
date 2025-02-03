@@ -3,7 +3,7 @@
 
 frappe.ui.form.on("Payment Entry", {
     refresh(frm){
-        frm.trigger('update_payment_type');
+        // frm.trigger('update_payment_type');
         frm.trigger('update_ces_fields');
     },
     posting_date(frm) {
@@ -18,7 +18,7 @@ frappe.ui.form.on("Payment Entry", {
         const pd_month = pd_date.getUTCMonth()+1;
         const pd_day = pd_date.getUTCDate();
         const pd_year = pd_date.getUTCFullYear();
-        const pd_year_be = pd_year + 543;
+        const pd_year_be = pd_year+543;
         
         // Populate posting date with BE year
         const be_date = `${pd_year_be}-${pd_month.toString().padStart(2,'0')}-${pd_day.toString().padStart(2,'0')}`;
@@ -31,15 +31,16 @@ frappe.ui.form.on("Payment Entry", {
         frm.set_value('ces_pd_yy_be', `${pd_year_be%100}`);
         frm.set_value('ces_pd_yyyy', `${pd_year}`);
         frm.set_value('ces_pd_yy', `${pd_year%100}`);
-        frm.set_value('ces_pd_mm', `${pd_month.toString().padStart(2,'0')}`);
-        frm.set_value('ces_pd_dd', `${pd_day.toString().padStart(2,'0')}`);
+        frm.set_value('ces_mm', `${pd_month.toString().padStart(2,'0')}`);
+        frm.set_value('ces_dd', `${pd_day.toString().padStart(2,'0')}`);
+        frm.set_value('ces_d', `${pd_day}`);
     },
-    payment_type(frm) {
-        frm.trigger('update_payment_type');
-    },
-    update_payment_type(frm) {
-        if (frm.doc.payment_type === 'Pay') frm.set_value('ces_pmt_type', 'PV');
-        if (frm.doc.payment_type === 'Receive') frm.set_value('ces_pmt_type', 'RV');
-        if (frm.doc.payment_type === 'Internal Transfer') frm.set_value('ces_pmt_type', 'ITV');
-    },
+    // payment_type(frm) {
+    //     frm.trigger('update_payment_type');
+    // },
+    // update_payment_type(frm) {
+    //     if (frm.doc.payment_type === 'Pay') frm.set_value('ces_pmt_type', 'PV');
+    //     if (frm.doc.payment_type === 'Receive') frm.set_value('ces_pmt_type', 'RV');
+    //     if (frm.doc.payment_type === 'Internal Transfer') frm.set_value('ces_pmt_type', 'ITV');
+    // },
 });

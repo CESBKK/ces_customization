@@ -1,0 +1,123 @@
+[
+ {
+  "bank_name": "SCB",
+  "bank_transaction_mapping": [],
+  "docstatus": 0,
+  "doctype": "Bank",
+  "modified": "2025-02-03 12:40:06.754174",
+  "name": "SCB",
+  "plaid_access_token": null,
+  "swift_number": "SICOTHBK",
+  "website": null
+ },
+ {
+  "bank_name": "TMBT",
+  "bank_transaction_mapping": [],
+  "docstatus": 0,
+  "doctype": "Bank",
+  "modified": "2025-02-03 12:42:43.043028",
+  "name": "TMBT",
+  "plaid_access_token": null,
+  "swift_number": "TMBKTHBK",
+  "website": null
+ },
+ {
+  "bank_name": "BAY",
+  "bank_transaction_mapping": [],
+  "docstatus": 0,
+  "doctype": "Bank",
+  "modified": "2025-02-03 12:43:09.028997",
+  "name": "BAY",
+  "plaid_access_token": null,
+  "swift_number": "AYUDTHBK",
+  "website": null
+ },
+ {
+  "bank_name": "Krungthai",
+  "bank_transaction_mapping": [],
+  "docstatus": 0,
+  "doctype": "Bank",
+  "modified": "2025-02-03 12:44:42.864196",
+  "name": "Krungthai",
+  "plaid_access_token": null,
+  "swift_number": "KRTHTHBK",
+  "website": null
+ },
+ {
+  "bank_name": "CIMB Thai",
+  "bank_transaction_mapping": [],
+  "docstatus": 0,
+  "doctype": "Bank",
+  "modified": "2025-02-03 12:45:25.992144",
+  "name": "CIMB Thai",
+  "plaid_access_token": null,
+  "swift_number": "UBOBTHBK",
+  "website": null
+ },
+ {
+  "bank_name": "GSB",
+  "bank_transaction_mapping": [],
+  "docstatus": 0,
+  "doctype": "Bank",
+  "modified": "2025-02-03 12:45:37.951374",
+  "name": "GSB",
+  "plaid_access_token": null,
+  "swift_number": "GSBATHBK",
+  "website": null
+ },
+ {
+  "bank_name": "UOBT",
+  "bank_transaction_mapping": [],
+  "docstatus": 0,
+  "doctype": "Bank",
+  "modified": "2025-02-03 12:45:54.653506",
+  "name": "UOBT",
+  "plaid_access_token": null,
+  "swift_number": "UOVBTHBK",
+  "website": null
+ },
+ {
+  "bank_name": "Thai Credit",
+  "bank_transaction_mapping": [],
+  "docstatus": 0,
+  "doctype": "Bank",
+  "modified": "2025-02-03 12:46:11.767475",
+  "name": "Thai Credit",
+  "plaid_access_token": null,
+  "swift_number": "THCETHB02",
+  "website": null
+ },
+ {
+  "bank_name": "ธกส",
+  "bank_transaction_mapping": [],
+  "docstatus": 0,
+  "doctype": "Bank",
+  "modified": "2025-02-03 12:46:27.874234",
+  "name": "ธกส",
+  "plaid_access_token": null,
+  "swift_number": "BAABTHBK",
+  "website": null
+ },
+ {
+  "bank_name": "BBL",
+  "bank_transaction_mapping": [],
+  "docstatus": 0,
+  "doctype": "Bank",
+  "modified": "2025-02-03 12:48:11.629148",
+  "name": "BBL",
+  "plaid_access_token": null,
+  "swift_number": "BKKBTHBK",
+  "website": null
+ },
+ {
+  "bank_name": "KBANK",
+  "bank_transaction_mapping": [],
+  "docstatus": 0,
+  "doctype": "Bank",
+  "modified": "2025-02-03 16:07:38.412232",
+  "name": "KBANK",
+  "plaid_access_token": null,
+  "swift_number": "KASITHBK",
+  "website": null
+ }
+]

@@ -7,7 +7,7 @@ from frappe.utils import (
 
 def parse_naming_series_variable(doc, variable):
     date = getdate()
-    date = doc.get("posting_date") or doc.get("transaction_date") or doc.get("date")
+    date = doc.get("posting_date") or doc.get("transaction_date") or doc.get("date") or getdate()
     if isinstance(date, str):
         date = getdate(date)
 

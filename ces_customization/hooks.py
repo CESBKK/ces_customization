@@ -11,13 +11,6 @@ app_license = "mit"
 # required_apps = []
 required_apps = ["erpnext"]
 
-fixtures = [
-    {
-        "dt": "Custom Field",
-        "filters": [["fieldname", "like", "ces%"]]
-    },
-]
-
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [
 # 	{
@@ -292,3 +285,17 @@ naming_series_variables = {
     # "CES-TD-DD": "ces_customization.custom.naming.parse_naming_series_variable",
     "CES-PMT-TYPE": "ces_customization.custom.naming.parse_naming_series_variable",
 }
+
+fixtures = [
+    {
+        "dt": "Custom Field",
+        "filters": [["fieldname", "like", "ces%"]]
+    },
+    {
+        "dt": "Bank"
+    },
+    # {
+    #     "dt": "Document Naming Settings"
+    # },
+    # This could not be done because it bound to Account and Company
+]
