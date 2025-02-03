@@ -1,6 +1,6 @@
 from datetime import datetime
 from erpnext.accounts.doctype.journal_entry.journal_entry import JournalEntry
-from frappe.utils.data import get_datetime
+from frappe.utils import getdate
 
 
 class ces_JournalEntry(JournalEntry):
@@ -41,6 +41,11 @@ class ces_JournalEntry(JournalEntry):
         return r['dd']
 
     @property
+    def ces_pd_d(self):
+        r = self.populate_pd_serie()
+        return r['d']
+
+    @property
     def ces_thai_month_abbr(self):
         r = self.populate_pd_serie()
         return r['th_mm']
@@ -53,7 +58,7 @@ class ces_JournalEntry(JournalEntry):
     def populate_pd_serie(self, year_type='AD'):
         # make sure that the supply posting date is in datetime type
         # sometimes Frappe just return datetime as str
-        posting_date = get_datetime(self.posting_date)
+        posting_date = getdate(self.posting_date)
         result = {}
         if year_type == 'AD':
             result['yyyy'] = str(posting_date.year)
@@ -64,10 +69,11 @@ class ces_JournalEntry(JournalEntry):
 
         result['mm'] = str(posting_date.month).zfill(2)
 
-        th_month_l = 'x มกราคม กุมภาพันธ์ มีนาคม เมษายน พฤษภาคม มิถุนายน กรกฎาคม กันยายน ตุลาคม พฤศจิกายน ธันวาคม'
-        th_month_s = 'x ม.ค. ก.พ. มี.ค. เม.ย. พ.ค. มิ.ย. ก.ค. ก.ย. ต.ค. พ.ย. ธ.ค.'
-        result['th_mm'] = th_month_s.split()[posting_date.month]
-        result['th_mmmm'] = th_month_l.split()[posting_date.month]
+        month_l = 'x มกราคม กุมภาพันธ์ มีนาคม เมษายน พฤษภาคม มิถุนายน กรกฎาคม กันยายน ตุลาคม พฤศจิกายน ธันวาคม'
+        month_s = 'x ม.ค. ก.พ. มี.ค. เม.ย. พ.ค. มิ.ย. ก.ค. ก.ย. ต.ค. พ.ย. ธ.ค.'
+        result['th_mm'] = month_s.split()[posting_date.month]
+        result['th_mmmm'] = month_l.split()[posting_date.month]
 
         result['dd'] = str(posting_date.day).zfill(2)
+        result['d'] = str(posting_date.day)
         return result
