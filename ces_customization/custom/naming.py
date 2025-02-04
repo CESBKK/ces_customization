@@ -11,13 +11,16 @@ def parse_naming_series_variable(doc, variable):
     if isinstance(date, str):
         date = getdate(date)
 
-    r = populate_serie(date=date)
+    # Populate data base on date
+    r_ad = populate_serie(date=date)
     r_be = populate_serie(date=date, year_type='BE')
+
+    # return vairable result
     if variable == 'CES-YY' and doc:
-        return r['yy']
+        return r_ad['yy']
 
     if variable == 'CES-YYYY' and doc:
-        return r['yyyy']
+        return r_ad['yyyy']
 
     if variable == 'CES-YY-BE' and doc:
         return r_be['yy']
@@ -26,48 +29,25 @@ def parse_naming_series_variable(doc, variable):
         return r_be['yyyy']
 
     if variable == 'CES-WW' and doc:
-        return r['ww']
+        return r_ad['ww']
 
     if variable == 'CES-MM' and doc:
-        return r['mm']
+        return r_ad['mm']
 
     if variable == 'CES-DD' and doc:
-        return r['dd']
+        return r_ad['dd']
 
-    # if variable == 'CES-TD-YY' and doc:
-    #     date = doc.get('transaction_date')
-    #     r = populate_serie(date=date)
-    #     return r['yy']
+    if variable == 'CES-YYYYMM-BE' and doc:
+        return f"{r_be['yyyy']}{r_be['mm']}"
 
-    # if variable == 'CES-TD-YYYY' and doc:
-    #     date = doc.get('transaction_date')
-    #     r = populate_serie(date=date)
-    #     return r['yyyy']
+    if variable == 'CES-YYMM-BE' and doc:
+        return f"{r_be['yy']}{r_be['mm']}"
 
-    # if variable == 'CES-TD-YYBE' and doc:
-    #     date = doc.get('transaction_date')
-    #     r = populate_serie(date=date, year_type='BE')
-    #     return r['yy']
+    if variable == 'CES-YYYYMM' and doc:
+        return f"{r_ad['yyyy']}{r_ad['mm']}"
 
-    # if variable == 'CES-TD-YYYYBE' and doc:
-    #     date = doc.get('transaction_date')
-    #     r = populate_serie(date=date, year_type='BE')
-    #     return r['yyyy']
-
-    # if variable == 'CES-TD-WW' and doc:
-    #     date = doc.get('transaction_date')
-    #     r = populate_serie(date=date)
-    #     return r['ww']
-
-    # if variable == 'CES-TD-MM' and doc:
-    #     date = doc.get('transaction_date')
-    #     r = populate_serie(date=date)
-    #     return r['mm']
-
-    # if variable == 'CES-TD-DD' and doc:
-    #     date = doc.get('transaction_date')
-    #     r = populate_serie(date=date)
-    #     return r['dd']
+    if variable == 'CES-YYMM' and doc:
+        return f"{r_ad['yy']}{r_ad['mm']}"
 
     if variable == 'CES-PMT-TYPE' and doc:
         pmt_type = doc.get('payment_type')
