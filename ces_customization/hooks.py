@@ -91,12 +91,14 @@ doctype_js = {
 
 # before_install = "ces_customization.install.before_install"
 # after_install = "ces_customization.install.after_install"
+after_install = "ces_customization.install.after_install"
 
 # Uninstallation
 # ------------
 
 # before_uninstall = "ces_customization.uninstall.before_uninstall"
 # after_uninstall = "ces_customization.uninstall.after_uninstall"
+before_uninstall = "ces_customization.uninstall.before_uninstall"
 
 # Integration Setup
 # ------------------
