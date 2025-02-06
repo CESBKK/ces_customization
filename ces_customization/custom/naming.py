@@ -1,3 +1,4 @@
+import frappe
 from frappe.model.naming import determine_consecutive_week_number
 from frappe.utils import (
     getdate,
@@ -6,6 +7,9 @@ from frappe.utils import (
 
 
 def parse_naming_series_variable(doc, variable):
+    if doc is None:
+        doc = doc("Payment Entry")
+
     date = getdate()
     date = doc.get("posting_date") or doc.get("transaction_date") or doc.get("date") or getdate()
     if isinstance(date, str):
@@ -49,12 +53,56 @@ def parse_naming_series_variable(doc, variable):
     if variable == 'CES-YYMM' and doc:
         return f"{r_ad['yy']}{r_ad['mm']}"
 
+    if variable == 'CES-JV-TYPE' and doc:
+        jv_type = doc.get('voucher_type')
+        result = ''
+        if jv_type == 'Inter Company Journal Entry':
+            result = 'IC-'
+        elif jv_type == 'Bank Entry':
+            result = 'BNK-'
+        elif jv_type == 'Cash Entry':
+            result = 'CSH-'
+        elif jv_type == 'Credit Card Entry':
+            result = 'CRD-'
+        elif jv_type == 'Debit Note':
+            result = 'DRN-'
+        elif jv_type == 'Credit Note':
+            result = 'CRN-'
+        elif jv_type == 'Contra Entry':
+            result = 'CNT-'
+        elif jv_type == 'Excise Entry':
+            result = 'EXS-'
+        elif jv_type == 'Write Off Entry':
+            result = 'WOF-'
+        elif jv_type == 'Opening Entry':
+            result = 'OPN-'
+        elif jv_type == 'Depreciation Entry':
+            result = 'DEP-'
+        elif jv_type == 'Exchange Rate Revaluation':
+            result = 'EXR-'
+        elif jv_type == 'Exchange Gain Or Loss':
+            result = 'EXGL'
+        elif jv_type == 'Deferred Revenue':
+            result = 'DFR-'
+        elif jv_type == 'Deferred Expense':
+            result = 'DFE-'
+        else:
+            result = ''
+        return result
+
     if variable == 'CES-PMT-TYPE' and doc:
         pmt_type = doc.get('payment_type')
         result = 'PV'
         result = 'RV' if pmt_type == 'Receive' else result
         result = 'ITV' if pmt_type == 'Internal Transfer' else result
         return result
+
+    if variable == 'CES-COM-ABBR' and doc:
+        # doc is current doc we are working on
+        # company_info_doc is another doc that contain Company Information
+        # in this case company_info_doc => Doctype Company which contain abbr field.
+        company_info_doc = frappe.get_doc('Company', doc.get('company'))
+        return company_info_doc.get('abbr')
 
 
 def populate_serie(date, year_type='AD'):

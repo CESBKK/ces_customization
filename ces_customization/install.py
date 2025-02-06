@@ -37,10 +37,13 @@ def after_install():
 
 
 def make_property_setters(action='install'):
-    target = 'ces_custom'
-    target = 'default' if action != 'install' else target
+    if action == 'install':
+        target = 'ces_custom'
+        print("Update Naming Series for DocTypes in ERPNext...")
+    else:
+        target = 'default'
+        print("Restoe Naming Series for DocTypes to default value in ERPNext...")
 
-    print("Update Naming Series for DocTypes in ERPNext...")
     for doctypes, serie_values in DOCTYPE_NAMING_SERIES.items():
         if isinstance(doctypes, str):
             doctypes = (doctypes,)

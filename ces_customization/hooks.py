@@ -10,6 +10,7 @@ app_license = "mit"
 
 # required_apps = []
 required_apps = ["erpnext"]
+# required_apps = ["erpnext", "erpnext_thailand"]
 
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [
@@ -290,6 +291,8 @@ naming_series_variables = {
     # "CES-TD-MM": "ces_customization.custom.naming.parse_naming_series_variable",
     # "CES-TD-DD": "ces_customization.custom.naming.parse_naming_series_variable",
     "CES-PMT-TYPE": "ces_customization.custom.naming.parse_naming_series_variable",
+    "CES-JV-TYPE": "ces_customization.custom.naming.parse_naming_series_variable",
+    "CES-COM-ABBR": "ces_customization.custom.naming.parse_naming_series_variable",
 }
 
 fixtures = [
