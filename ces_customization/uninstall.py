@@ -1,6 +1,5 @@
 # import frappe
 
-# from ces_customization.constants import DOCTYPE_NAMING_SERIES
 from ces_customization.install import make_property_setters
 from ces_customization.constants import (
     DOCTYPE_NAMING_SERIES,
