@@ -70,6 +70,12 @@ DOCTYPE_NAMING_SERIES = {
             "ces_custom": "ACC-ASR-.CES-YYYY-BE.-",
         },
     ],
+    "Bank Transaction": [
+        {
+            "default": "ACC-BTN-.YYYY.",
+            "ces_custom": "ACC-BTN-.CES-YYMM-BE.-",
+        },
+    ],
     "Blanket Order": [
         {
             "default": "MFG-BLR-.YYYY.-",
@@ -278,6 +284,39 @@ DOCTYPE_NAMING_SERIES = {
         {
             "default": "MFG-WO-.YYYY.-",
             "ces_custom": "MFG-WO-.CES-YYMM-BE.-",
+        },
+    ],
+}
+
+ERPNEXT_THAILAND_DOCTYPE_NAMING_SERIES = {
+    "Payment Receipt": [
+        {
+            "default": "PRE-.YYYY.-",
+            "ces_custom": "ACC-PRE-.CES-YYMM-BE.-",
+        },
+    ],
+    "Purchase Billing": [
+        {
+            "default": "PUR-BIL-.YYYY.-",
+            "ces_custom": "PUR-BIL-.CES-YYMM-BE.-",
+        },
+    ],
+    "Purchase Tax Invoice": [
+        {
+            "default": "SI.YY.",
+            "ces_custom": "SUP-INV-.CES-YYMM-BE.-",
+        },
+    ],
+    "Sales Billing": [
+        {
+            "default": "SAL-BIL-.YYYY.-",
+            "ces_custom": "SAL-BIL-.CES-YYMM-BE.-",
+        },
+    ],
+    "Sales Tax Invoice": [
+        {
+            "default": "CI.YY.",
+            "ces_custom": "CUS-INV-.CES-YYMM-BE.-",
         },
     ],
 }

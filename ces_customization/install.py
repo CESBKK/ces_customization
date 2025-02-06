@@ -6,7 +6,8 @@ from frappe.custom.doctype.property_setter.property_setter import \
     make_property_setter
 
 from ces_customization.constants import (
-    DOCTYPE_NAMING_SERIES
+    DOCTYPE_NAMING_SERIES,
+    ERPNEXT_THAILAND_DOCTYPE_NAMING_SERIES
 )
 
 
@@ -36,7 +37,7 @@ def after_install():
 #         create_custom_fields(HRMS_CUSTOM_FIELDS, ignore_validate=True)
 
 
-def make_property_setters(action='install'):
+def make_property_setters(action: str = 'install', input_dict: dict = DOCTYPE_NAMING_SERIES):
     if action == 'install':
         target = 'ces_custom'
         print("Update Naming Series for DocTypes in ERPNext...")
@@ -44,7 +45,10 @@ def make_property_setters(action='install'):
         target = 'default'
         print("Restore Naming Series for DocTypes to default value in ERPNext...")
 
-    for doctypes, serie_values in DOCTYPE_NAMING_SERIES.items():
+    # special treatment last until database definition change
+    # bank_transaction_serie_setter(action=action)
+
+    for doctypes, serie_values in input_dict.items():
         if isinstance(doctypes, str):
             doctypes = (doctypes,)
         for doctype in doctypes:
@@ -59,7 +63,34 @@ def naming_series_property_setter(doctype, property, value):
     make_property_setter(doctype, "naming_series", property, value, "Text")
 
 
+# def bank_transaction_serie_setter(action):
+#     '''
+#     Special treatment for Bank Transaction DocType
+#     as serie name was part of default value of database field.
+#     Need DDL to make change to database field directly
+
+#     This doctype is used when do bank reconcile by importing bank statement
+#     into system.
+#     '''
+#     if action == 'install':
+#         target_value = 'ACC-BTN-.CES-YYMM-BE.-'
+#     else:
+#         target_value = 'ACC-BTN-.YYYY.-'
+
+#     sql = (
+#         'ALTER TABLE `tabBank Transaction` '
+#         'CHANGE `naming_series` '
+#         '`naming_series` varchar(140) '
+#         'CHARACTER SET utf8mb4 '
+#         'COLLATE utf8mb4_unicode_ci '
+#         f"DEFAULT '{target_value}';"
+#     )
+
+#     frappe.db.sql(sql)
+#     frappe.clear_cache(doctype='Bank Transaction')
+
+
 def after_app_install(app_name):
-    pass
-    # if app_name == "hrms":
-    # 	create_custom_fields(HRMS_CUSTOM_FIELDS, ignore_validate=True)
+    if app_name == "erpnext_thailand":
+        make_property_setters(action='install', input_dict=ERPNEXT_THAILAND_DOCTYPE_NAMING_SERIES)
+        # create_custom_fields(HRMS_CUSTOM_FIELDS, ignore_validate=True)

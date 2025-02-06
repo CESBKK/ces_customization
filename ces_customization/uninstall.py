@@ -2,16 +2,20 @@
 
 # from ces_customization.constants import DOCTYPE_NAMING_SERIES
 from ces_customization.install import make_property_setters
+from ces_customization.constants import (
+    DOCTYPE_NAMING_SERIES,
+    ERPNEXT_THAILAND_DOCTYPE_NAMING_SERIES
+)
 
 
 def before_app_uninstall(app_name):
-    pass
-    # if app_name == "hrms":
+    if app_name == "erpnext_thailand":
+        make_property_setters(action='uninstall', input_dict=ERPNEXT_THAILAND_DOCTYPE_NAMING_SERIES)
     # 	delete_custom_fields(HRMS_CUSTOM_FIELDS)
 
 
 def before_uninstall():
-    make_property_setters(action='uninstall')
+    make_property_setters(action='uninstall', input_dict=DOCTYPE_NAMING_SERIES)
     print('Sad that you are gone...')
 
 
