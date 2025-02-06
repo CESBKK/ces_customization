@@ -7,14 +7,15 @@ from frappe.custom.doctype.property_setter.property_setter import \
 
 from ces_customization.constants import (
     DOCTYPE_NAMING_SERIES,
-    ERPNEXT_THAILAND_DOCTYPE_NAMING_SERIES
+    ERPNEXT_THAILAND_DOCTYPE_NAMING_SERIES,
+    HRMS_DOCTYPE_NAMING_SERIES
 )
 
 
 def after_install():
     try:
-        print("Setting up CES Customization...")
         # make_custom_fields()
+        click.secho("Update Naming Series for DocTypes in ERPNext...", fg="yellow")
         make_property_setters()
         click.secho("Thank you for installing CES Customization!", fg="green")
     except Exception as e:
@@ -40,10 +41,8 @@ def after_install():
 def make_property_setters(action: str = "install", input_dict: dict = DOCTYPE_NAMING_SERIES):
     if action == "install":
         target = "ces_custom"
-        print("Update Naming Series for DocTypes in ERPNext...")
     else:
         target = "default"
-        print("Restore Naming Series for DocTypes to default value in ERPNext...")
 
     for doctypes, serie_values in input_dict.items():
         if isinstance(doctypes, str):
@@ -52,10 +51,10 @@ def make_property_setters(action: str = "install", input_dict: dict = DOCTYPE_NA
             serie_name = serie_values[0][target].split('\n')[0]
             if doctype == "Bank Transaction":
                 '''
-                Bank Transaction is a bit special as default naming serie
-                was part of database field default value
-                we will need to ignore all validation to change its
-                property setter
+                Bank Transaction is a bit special, as default naming serie
+                is a part of database field default value.
+                We will need to ignore all validation to change its
+                property setter.
                 '''
                 naming_series_property_setter(doctype, "default", "", False)
                 naming_series_property_setter(doctype, "options", serie_values[0][target], False)
@@ -81,5 +80,9 @@ def naming_series_property_setter(doctype,
 
 def after_app_install(app_name):
     if app_name == "erpnext_thailand":
+        click.secho("Update Naming Series for DocTypes in ERPNext Thailand...", fg="yellow")
         make_property_setters(action="install", input_dict=ERPNEXT_THAILAND_DOCTYPE_NAMING_SERIES)
         # create_custom_fields(HRMS_CUSTOM_FIELDS, ignore_validate=True)
+    if app_name == "hrms":
+        click.secho("Update Naming Series for DocTypes in HRMS...", fg="yellow")
+        make_property_setters(action="install", input_dict=HRMS_DOCTYPE_NAMING_SERIES)

@@ -320,3 +320,36 @@ ERPNEXT_THAILAND_DOCTYPE_NAMING_SERIES = {
         },
     ],
 }
+
+HRMS_DOCTYPE_NAMING_SERIES = {
+    "Employee Advance": [
+        {
+            "default": "HR-EAD-.YYYY.-",
+            "ces_custom": "HR-EAD-.CES-YYMM-BE.-",
+        },
+    ],
+    "Expense Claim": [
+        {
+            "default": "HR-EXP-.YYYY.-",
+            "ces_custom": "HR-EXP-.CES-YYMM-BE.-",
+        },
+    ],
+    "Leave Allocation": [
+        {
+            "default": "HR-LAL-.YYYY.-",
+            "ces_custom": "HR-LAL-.CES-YYMM-BE.-",
+        },
+    ],
+    "Leave Application": [
+        {
+            "default": "HR-LAP-.YYYY.-",
+            "ces_custom": "HR-LAP-.CES-YYMM-BE.-",
+        },
+    ],
+    "Vehicle Log": [
+        {
+            "default": "HR-VLOG-.YYYY.-",
+            "ces_custom": "HR-VLOG-.CES-YYMM-BE.-",
+        },
+    ],
+}
