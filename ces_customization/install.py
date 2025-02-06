@@ -42,7 +42,7 @@ def make_property_setters(action='install'):
         print("Update Naming Series for DocTypes in ERPNext...")
     else:
         target = 'default'
-        print("Restoe Naming Series for DocTypes to default value in ERPNext...")
+        print("Restore Naming Series for DocTypes to default value in ERPNext...")
 
     for doctypes, serie_values in DOCTYPE_NAMING_SERIES.items():
         if isinstance(doctypes, str):
