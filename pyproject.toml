@@ -18,3 +18,10 @@ build-backend = "flit_core.buildapi"
 # These dependencies are only installed when developer mode is enabled
 [tool.bench.dev-dependencies]
 # package_name = "~=1.1.0"
+
+# APT Dependencies
+[deploy.dependencies.apt]
+packages = [
+    "libthai0",
+    "fonts-tlwg-laksaman-otf"
+]

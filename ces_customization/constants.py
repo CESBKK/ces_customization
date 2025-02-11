@@ -322,7 +322,18 @@ ERPNEXT_THAILAND_DOCTYPE_NAMING_SERIES = {
 }
 
 HRMS_DOCTYPE_NAMING_SERIES = {
-    "Employee Advance": [
+    "Additional Salary": [
+        {
+            "default": "HR-ADS-.YY.-.MM.-",
+            "ces_custom": "HR-ADS-.CES-YYMM-BE.-",
+        },
+    ],
+    "Appraisal": [
+        {
+            "default": "HR-APR-.YYYY.-",
+            "ces_custom": "HR-EXP-.CES-YYYY-BE.-",
+        },
+    ],    "Employee Advance": [
         {
             "default": "HR-EAD-.YYYY.-",
             "ces_custom": "HR-EAD-.CES-YYMM-BE.-",
