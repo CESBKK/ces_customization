@@ -285,13 +285,6 @@ naming_series_variables = {
     "CES-YYMM": "ces_customization.custom.naming.parse_naming_series_variable",
     "CES-YYYYMM-BE": "ces_customization.custom.naming.parse_naming_series_variable",
     "CES-YYMM-BE": "ces_customization.custom.naming.parse_naming_series_variable",
-    # "CES-TD-YY": "ces_customization.custom.naming.parse_naming_series_variable",
-    # "CES-TD-YYYY": "ces_customization.custom.naming.parse_naming_series_variable",
-    # "CES-TD-YYBE": "ces_customization.custom.naming.parse_naming_series_variable",
-    # "CES-TD-YYYYBE": "ces_customization.custom.naming.parse_naming_series_variable",
-    # "CES-TD-WW": "ces_customization.custom.naming.parse_naming_series_variable",
-    # "CES-TD-MM": "ces_customization.custom.naming.parse_naming_series_variable",
-    # "CES-TD-DD": "ces_customization.custom.naming.parse_naming_series_variable",
     "CES-PMT-TYPE": "ces_customization.custom.naming.parse_naming_series_variable",
     "CES-JV-TYPE": "ces_customization.custom.naming.parse_naming_series_variable",
     "CES-COM-ABBR": "ces_customization.custom.naming.parse_naming_series_variable",
@@ -305,8 +298,8 @@ fixtures = [
     {
         "dt": "Bank"
     },
-    # {
-    #     "dt": "Document Naming Settings"
-    # },
-    # This could not be done because it bound to Account and Company
+    # Thai UOM หน่วยนับที่ใช้สำหรับจัดทำใบสั่งซื้อ บส.01  ในระบบ GFMIS
+    {
+        "dt": "UOM"
+    },
 ]
