@@ -1,7 +1,7 @@
 # import frappe
 import click
-from ces_customization.install import make_property_setters
-from ces_customization.constants import (
+from ces_customization.setup.install import make_property_setters
+from ces_customization.setup.constants import (
     DOCTYPE_NAMING_SERIES,
     ERPNEXT_THAILAND_DOCTYPE_NAMING_SERIES,
     HRMS_DOCTYPE_NAMING_SERIES

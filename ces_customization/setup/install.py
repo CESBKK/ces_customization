@@ -1,11 +1,13 @@
 import click
+import json
 import frappe
+from frappe import _
 # from frappe.custom.doctype.custom_field.custom_field import \
 #     create_custom_fields
 from frappe.custom.doctype.property_setter.property_setter import \
     make_property_setter
 
-from ces_customization.constants import (
+from ces_customization.setup.constants import (
     DOCTYPE_NAMING_SERIES,
     ERPNEXT_THAILAND_DOCTYPE_NAMING_SERIES,
     HRMS_DOCTYPE_NAMING_SERIES
@@ -17,6 +19,8 @@ def after_install():
         # make_custom_fields()
         click.secho("Update Naming Series for DocTypes in ERPNext...", fg="yellow")
         make_property_setters()
+        click.secho("Add GFMIS UOMs...", fg="yellow")
+        add_uom_data()
         click.secho("Thank you for installing CES Customization!", fg="green")
     except Exception as e:
         BUG_REPORT_URL = "https://github.com/CESBKK/ces_customization/issues/new"
@@ -27,7 +31,6 @@ def after_install():
             fg="bright_red",
         )
         raise e
-
 
 # def make_custom_fields():
 #     print("Setup custom fields for erpnext...")
@@ -86,3 +89,27 @@ def after_app_install(app_name):
     if app_name == "hrms":
         click.secho("Update Naming Series for DocTypes in HRMS...", fg="yellow")
         make_property_setters(action="install", input_dict=HRMS_DOCTYPE_NAMING_SERIES)
+
+
+def add_uom_data():
+    '''
+    Based on erpnext/setup/setup_wizard/operations/install_fixtures.py
+    add Thai UOM หน่วยนับที่ใช้สำหรับจัดทำใบสั่งซื้อ บส.01 ในระบบ GFMIS
+    Except:
+    - CUP, DAY, KG - exist in erpnext default.
+    - HR. - already had "H" for "ชั่วโมง"
+    '''
+    uoms = json.loads(
+        open(frappe.get_app_path("ces_customization", "setup", "data", "gfmis_uom_data.json")).read()
+    )
+    for d in uoms:
+        if not frappe.db.exists("UOM", _(d.get("uom_name"))):
+            frappe.get_doc(
+                {
+                    "doctype": "UOM",
+                    "uom_name": _(d.get("uom_name")),
+                    "name": _(d.get("uom")),
+                    "must_be_whole_number": d.get("must_be_whole_number"),
+                    "enabled": 1,
+                }
+            ).db_insert()

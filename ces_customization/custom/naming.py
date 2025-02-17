@@ -55,7 +55,7 @@ def parse_naming_series_variable(doc, variable):
 
     if variable == 'CES-JV-TYPE' and doc:
         jv_type = doc.get('voucher_type')
-        result = ''
+
         if jv_type == 'Inter Company Journal Entry':
             result = 'IC-'
         elif jv_type == 'Bank Entry':
@@ -88,6 +88,7 @@ def parse_naming_series_variable(doc, variable):
             result = 'DFE-'
         else:
             result = ''
+
         return result
 
     if variable == 'CES-PMT-TYPE' and doc:

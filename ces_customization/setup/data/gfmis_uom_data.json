@@ -1,0 +1,1012 @@
+[
+{
+    "uom": "'",
+    "uom_name": "นิ้ว",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "\"2",
+    "uom_name": "ตารางนิ้ว",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "\"3",
+    "uom_name": "ลูกบาศก์นิ้ว",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "\u2030",
+    "uom_name": "ต่อ mille",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "A/V",
+    "uom_name": "ซีเมนส์ต่อเมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ACR",
+    "uom_name": "เอเคอร์",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "AU",
+    "uom_name": "หน่วยนับกิจกรรม",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "BAG",
+    "uom_name": "ถุง",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "BK",
+    "uom_name": "เล่ม",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "BPH",
+    "uom_name": "แกลลอนต่อชั่วโมง (US)",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "BT.",
+    "uom_name": "ขวด",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "C3S",
+    "uom_name": "ลูกบาศก์เซนติเมตร/วินาที",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "CAB",
+    "uom_name": "ตู้",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "CAN",
+    "uom_name": "กระป๋อง",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "CAR",
+    "uom_name": "คัน",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "CCM",
+    "uom_name": "ลูกบาศก์เซนติเมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "CD3",
+    "uom_name": "ลูกบาศก์เดซิเมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "CL",
+    "uom_name": "เซนติลิตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "CM",
+    "uom_name": "เซนติเมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "CM2",
+    "uom_name": "ตารางเซนติเมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "CMS",
+    "uom_name": "เซนติเมตร/วินาที",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "CRT",
+    "uom_name": "กล่อง",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "CT",
+    "uom_name": "คาร์ตัน",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "CV",
+    "uom_name": "หีบ",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "DEG",
+    "uom_name": "องศา",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "DM",
+    "uom_name": "เดซิเมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "DR",
+    "uom_name": "ถัง",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "DZ",
+    "uom_name": "โหล",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "EA",
+    "uom_name": "ชิ้น",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "EML",
+    "uom_name": "หน่วยเอมไซน์/มิลลิลิตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "EU",
+    "uom_name": "หน่วยเอมไซน์",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "FIL",
+    "uom_name": "แฟ้ม",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "FOZ",
+    "uom_name": "ออนซ์หน่วยวัดของเหลว US",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "FT",
+    "uom_name": "ฟุต",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "FT2",
+    "uom_name": "ตารางฟุต",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "FT3",
+    "uom_name": "ลูกบาศก์ฟุต",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "FYR",
+    "uom_name": "กิกะจูล",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "G",
+    "uom_name": "กรัม",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "GA",
+    "uom_name": "US แกลลอน",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "GAU",
+    "uom_name": "กรัมทองคำ",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "GL",
+    "uom_name": "gram act.ingrd / liter",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "GLI",
+    "uom_name": "กรัม/ลิตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "GM",
+    "uom_name": "กรัมต่อโมล",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "GM2",
+    "uom_name": "กรัม/ตารางเมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "GM3",
+    "uom_name": "กรัมต่อลูกบาศก์เมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "GOH",
+    "uom_name": "กิกะโอห์ม",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "GPM",
+    "uom_name": "แกลลอนต่อไมล์ (US)",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "GRO",
+    "uom_name": "ตัวใหญ่",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "GRP",
+    "uom_name": "กลุ่ม",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "H",
+    "uom_name": "ชั่วโมง",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "HA",
+    "uom_name": "เฮกตาร์",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "HL",
+    "uom_name": "เฮกโตลิตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "MM3",
+    "uom_name": "ลูกบาศก์มิลลิเมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "MN",
+    "uom_name": "เมกะนิวตัน",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "MNM",
+    "uom_name": "มิลลินิวตัน/เมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "MPG",
+    "uom_name": "ไมล์ต่อแกลลอน (US)",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "MPL",
+    "uom_name": "มิลิโมลต่อลิตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "MPS",
+    "uom_name": "มิลลิปาสคาลวินาที",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "MS",
+    "uom_name": "พิโควินาที",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "MS2",
+    "uom_name": "เมตร/วินาทีกำลังสอง",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "MSC",
+    "uom_name": "ไมโครซเมนส์ต่อเซนติเมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "MSE",
+    "uom_name": "มิลลิวินาที",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "MTH",
+    "uom_name": "เดือน",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "MWH",
+    "uom_name": "เมกะวัตต์ ชั่วโมง",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "NA",
+    "uom_name": "นาโนแอมแปร์",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "NAM",
+    "uom_name": "นาโนเมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "NG",
+    "uom_name": "Gram act. ingrd.",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "NI",
+    "uom_name": "กิโลนิวตัน",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "NM",
+    "uom_name": "นิวตัน/เมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "NMM",
+    "uom_name": "นิวตัน/ตารางมิลลิเมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "NS",
+    "uom_name": "นาโนวินาที",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "OC",
+    "uom_name": "ออนซ์",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "P",
+    "uom_name": "จุด",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "PAA",
+    "uom_name": "คู่",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "PAC",
+    "uom_name": "แพค/ห่อ",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "PAL",
+    "uom_name": "แพลเลต",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "PAS",
+    "uom_name": "ปาสคาลวินาที",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "PC.",
+    "uom_name": "เมกะโวลต์แอมแปร์",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "PGL",
+    "uom_name": "กิโลกรัมต่อลูกบาศก์เมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "PMI",
+    "uom_name": "หนึ่ง/นาที",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "PPB",
+    "uom_name": "อัตราส่วนพันล้าน",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "PPM",
+    "uom_name": "อัตราส่วนล้าน",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "PPT",
+    "uom_name": "อัตราส่วนล้านล้าน",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "PRD",
+    "uom_name": "งวด",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "PRS",
+    "uom_name": "คน",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "PT",
+    "uom_name": "ไพนท์, หน่วยวัดขนาดของเหลว US",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "QML",
+    "uom_name": "กิโลโมล",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "QT",
+    "uom_name": "ควอรท, หน่วยวัดขนาดของเหลว US",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "RF",
+    "uom_name": "มิลลิฟาเรด",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "RHO",
+    "uom_name": "กรัม/ลูกบาศก์เซนติเมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "RM",
+    "uom_name": "รีม",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ROL",
+    "uom_name": "Roll",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "R-U",
+    "uom_name": "นาโนฟาเรด",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "SHE",
+    "uom_name": "ผืน",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "SHT",
+    "uom_name": "แผ่น",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ST",
+    "uom_name": "ชุด",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "STK",
+    "uom_name": "ท่อน",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "SYS",
+    "uom_name": "ระบบ",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "T",
+    "uom_name": "หลักพัน",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "TM",
+    "uom_name": "ครั้ง",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "TO",
+    "uom_name": "ตัน",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "IB",
+    "uom_name": "พิโคฟาเรด",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "JKG",
+    "uom_name": "จูล/กิโลกรัม",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "JMO",
+    "uom_name": "จูล/โมล",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "JOB",
+    "uom_name": "งาน",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "KAI",
+    "uom_name": "Kilogram act. ingrd.",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "KD3",
+    "uom_name": "กิโลกรัมต่อลูกบาศก์เดซิเมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "KGM",
+    "uom_name": "กิโลกรัม/โมล",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "KGS",
+    "uom_name": "กิโลกรัมต่อวินาที",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "KIK",
+    "uom_name": "kg act.ingrd. / kg",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "KJK",
+    "uom_name": "กิโลจูล/กิโลกรัม",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "KJM",
+    "uom_name": "กิโลจูล/โมล",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "KM",
+    "uom_name": "กิโลเมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "KM2",
+    "uom_name": "ตารางกิโลเมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "KMH",
+    "uom_name": "กิโลเมตรต่อชั่วโมง",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "KMN",
+    "uom_name": "เคลวิน/นาที",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "KMS",
+    "uom_name": "เคลวิน/วินาที",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "KPA",
+    "uom_name": "กิโลปาสคาล",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "KVA",
+    "uom_name": "กิโลโวลต์แอมแปร์",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "L",
+    "uom_name": "ลิตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "LB",
+    "uom_name": "US ปอนด์",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "LHK",
+    "uom_name": "ลิตรต่อ 100 กิโลเมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "LMI",
+    "uom_name": "ลิตร/นาที",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "LMS",
+    "uom_name": "ลิตร/โมลวินาที",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "LPH",
+    "uom_name": "ลิตรต่อชั่วโมง",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "LT",
+    "uom_name": "Kilotonne",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "M",
+    "uom_name": "เมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "M/L",
+    "uom_name": "โมลต่อลิตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "M/M",
+    "uom_name": "โมลต่อลูกบาศก์เมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "M/S",
+    "uom_name": "เมตร/วินาที",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "M2",
+    "uom_name": "ตารางเมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "M-2",
+    "uom_name": "1 / ตารางเมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "M2S",
+    "uom_name": "ตารางเมตร/วินาที",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "M3",
+    "uom_name": "ลูกบาศก์เมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "M3H",
+    "uom_name": "ลูกบาศก์เมตร/ชั่วโมง",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "M3S",
+    "uom_name": "ลูกบาศก์เมตร/วินาที",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "MAC",
+    "uom_name": "เครื่อง",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "MD",
+    "uom_name": "มัด",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "MEJ",
+    "uom_name": "เมกะจูล",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "MG",
+    "uom_name": "มิลลิกรัม",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "MGL",
+    "uom_name": "มิลลิกรัม/ลิตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "MGO",
+    "uom_name": "เมกะโอมห์",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "MGQ",
+    "uom_name": "มิลลิกรัม/ลูกบาศก์เมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "MH",
+    "uom_name": "เมตร/ชั่วโมง",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "MHV",
+    "uom_name": "เมกะโวลต์",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "MI",
+    "uom_name": "ไมล์",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "MI2",
+    "uom_name": "ตารางไมล์",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "MIN",
+    "uom_name": "นาที",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "MIS",
+    "uom_name": "ไมโครวินาที",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ML",
+    "uom_name": "มิลลิลิตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "MLI",
+    "uom_name": "Milliliter act. ingr.",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "MM",
+    "uom_name": "มิลลิเมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "MM2",
+    "uom_name": "ตารางมิลลิเมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "TOM",
+    "uom_name": "ตัน/ลูกบาศก์เมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "TON",
+    "uom_name": "US ตัน",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "TUB",
+    "uom_name": "ท่อ",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U1",
+    "uom_name": "แท่ง",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U10",
+    "uom_name": "ขด",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U11",
+    "uom_name": "โคม",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U12",
+    "uom_name": "คิว",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U13",
+    "uom_name": "ปี๊บ",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U14",
+    "uom_name": "ซอง",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U15",
+    "uom_name": "ดวง",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U16",
+    "uom_name": "ดอก",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U17",
+    "uom_name": "แผง",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U18",
+    "uom_name": "ตลับ",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U19",
+    "uom_name": "เที่ยว",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U2",
+    "uom_name": "ตัว",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U20",
+    "uom_name": "นัด",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U21",
+    "uom_name": "แท่น",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U22",
+    "uom_name": "บาน",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U23",
+    "uom_name": "ใบ",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U24",
+    "uom_name": "ภาพ/รูป",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U25",
+    "uom_name": "เรือน",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U26",
+    "uom_name": "ล้อ",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U27",
+    "uom_name": "ลัง",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U28",
+    "uom_name": "วง",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U29",
+    "uom_name": "เส้น",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U3",
+    "uom_name": "ลูก",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U30",
+    "uom_name": "หลอด",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U31",
+    "uom_name": "หลัง",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U32",
+    "uom_name": "เม็ด",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U33",
+    "uom_name": "ไมโครแอมแปร์",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U34",
+    "uom_name": "ไมโครฟาเรด",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U35",
+    "uom_name": "ไมโครเมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U36",
+    "uom_name": "ไมโครกรัม/ลูกบาศก์เมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U37",
+    "uom_name": "ไมโครลิตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U4",
+    "uom_name": "กระสอบ",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U40",
+    "uom_name": "ไมโครกรัม/ลิตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U5",
+    "uom_name": "กรง",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U6",
+    "uom_name": "กรอบ",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U7",
+    "uom_name": "กระถาง",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U8",
+    "uom_name": "กระบอก",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "U9",
+    "uom_name": "ก้อน",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "UNT",
+    "uom_name": "หน่วย",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "VAL",
+    "uom_name": "วัสดุที่คิดมูลค่าเท่านั้น",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "VAM",
+    "uom_name": "โวลต์แอมแปร์",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "WKS",
+    "uom_name": "สัปดาห์",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "Y",
+    "uom_name": "ปี",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "YD",
+    "uom_name": "หลา",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "YD2",
+    "uom_name": "ตารางหลา",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "YD3",
+    "uom_name": "ลูกบาศก์หลา",
+    "must_be_whole_number": 0
+}
+]

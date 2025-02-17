@@ -92,16 +92,16 @@ doctype_js = {
 
 # before_install = "ces_customization.install.before_install"
 # after_install = "ces_customization.install.after_install"
-after_install = "ces_customization.install.after_install"
-after_app_install = "ces_customization.install.after_app_install"
+after_install = "ces_customization.setup.install.after_install"
+after_app_install = "ces_customization.setup.install.after_app_install"
 
 # Uninstallation
 # ------------
 
 # before_uninstall = "ces_customization.uninstall.before_uninstall"
 # after_uninstall = "ces_customization.uninstall.after_uninstall"
-before_uninstall = "ces_customization.uninstall.before_uninstall"
-before_app_uninstall = "ces_customization.uninstall.before_app_uninstall"
+before_uninstall = "ces_customization.setup.uninstall.before_uninstall"
+before_app_uninstall = "ces_customization.setup.uninstall.before_app_uninstall"
 
 # Integration Setup
 # ------------------
@@ -299,7 +299,10 @@ fixtures = [
         "dt": "Bank"
     },
     # Thai UOM หน่วยนับที่ใช้สำหรับจัดทำใบสั่งซื้อ บส.01  ในระบบ GFMIS
-    {
-        "dt": "UOM"
-    },
+    # {
+    #     "dt": "UOM"
+    # },
+    # {
+    #     "dt": "UOM Conversion Factor"
+    # },
 ]
