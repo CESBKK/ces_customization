@@ -1,0 +1,27 @@
+[
+{
+    "doctype": "Payment Receipt",
+    "default": "PRE-.YYYY.-",
+    "ces_custom": "ACC-PRE-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Purchase Billing",
+    "default": "PUR-BIL-.YYYY.-",
+    "ces_custom": "PUR-BIL-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Purchase Tax Invoice",
+    "default": "SI.YY.",
+    "ces_custom": "SUP-INV-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Sales Billing",
+    "default": "SAL-BIL-.YYYY.-",
+    "ces_custom": "SAL-BIL-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Sales Tax Invoice",
+    "default": "CI.YY.",
+    "ces_custom": "CUS-INV-.CES-YYMM-BE.-"
+}
+]

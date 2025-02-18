@@ -8,88 +8,86 @@ from frappe.utils import (
 
 def parse_naming_series_variable(doc, variable):
     if doc is None:
-        doc = doc("Payment Entry")
+        doc = doc('Payment Entry')
 
     date = getdate()
-    date = doc.get("posting_date") or doc.get("transaction_date") or doc.get("date") or getdate()
+    date = doc.get('posting_date') or doc.get('transaction_date') or doc.get('date') or getdate()
     if isinstance(date, str):
         date = getdate(date)
 
     # Populate data base on date
-    r_ad = populate_serie(date=date)
-    r_be = populate_serie(date=date, year_type='BE')
+    result_ad = populate_serie(date=date)
+    result_be = populate_serie(date=date, year_type='BE')
 
     # return vairable result
     if variable == 'CES-YY' and doc:
-        return r_ad['yy']
+        return result_ad['yy']
 
     if variable == 'CES-YYYY' and doc:
-        return r_ad['yyyy']
+        return result_ad['yyyy']
 
     if variable == 'CES-YY-BE' and doc:
-        return r_be['yy']
+        return result_be['yy']
 
     if variable == 'CES-YYYY-BE' and doc:
-        return r_be['yyyy']
+        return result_be['yyyy']
 
     if variable == 'CES-WW' and doc:
-        return r_ad['ww']
+        return result_ad['ww']
 
     if variable == 'CES-MM' and doc:
-        return r_ad['mm']
+        return result_ad['mm']
 
     if variable == 'CES-DD' and doc:
-        return r_ad['dd']
+        return result_ad['dd']
 
     if variable == 'CES-YYYYMM-BE' and doc:
-        return f"{r_be['yyyy']}{r_be['mm']}"
+        return f"{result_be['yyyy']}{result_be['mm']}"
 
     if variable == 'CES-YYMM-BE' and doc:
-        return f"{r_be['yy']}{r_be['mm']}"
+        return f"{result_be['yy']}{result_be['mm']}"
 
     if variable == 'CES-YYYYMM' and doc:
-        return f"{r_ad['yyyy']}{r_ad['mm']}"
+        return f"{result_ad['yyyy']}{result_ad['mm']}"
 
     if variable == 'CES-YYMM' and doc:
-        return f"{r_ad['yy']}{r_ad['mm']}"
+        return f"{result_ad['yy']}{result_ad['mm']}"
 
     if variable == 'CES-JV-TYPE' and doc:
         jv_type = doc.get('voucher_type')
 
         if jv_type == 'Inter Company Journal Entry':
-            result = 'IC-'
+            return 'IC-'
         elif jv_type == 'Bank Entry':
-            result = 'BNK-'
+            return 'BNK-'
         elif jv_type == 'Cash Entry':
-            result = 'CSH-'
+            return 'CSH-'
         elif jv_type == 'Credit Card Entry':
-            result = 'CRD-'
+            return 'CRD-'
         elif jv_type == 'Debit Note':
-            result = 'DRN-'
+            return 'DRN-'
         elif jv_type == 'Credit Note':
-            result = 'CRN-'
+            return 'CRN-'
         elif jv_type == 'Contra Entry':
-            result = 'CNT-'
+            return 'CNT-'
         elif jv_type == 'Excise Entry':
-            result = 'EXS-'
+            return 'EXS-'
         elif jv_type == 'Write Off Entry':
-            result = 'WOF-'
+            return 'WOF-'
         elif jv_type == 'Opening Entry':
-            result = 'OPN-'
+            return 'OPN-'
         elif jv_type == 'Depreciation Entry':
-            result = 'DEP-'
+            return 'DEP-'
         elif jv_type == 'Exchange Rate Revaluation':
-            result = 'EXR-'
+            return 'EXR-'
         elif jv_type == 'Exchange Gain Or Loss':
-            result = 'EXGL'
+            return 'EXGL'
         elif jv_type == 'Deferred Revenue':
-            result = 'DFR-'
+            return 'DFR-'
         elif jv_type == 'Deferred Expense':
-            result = 'DFE-'
+            return 'DFE-'
         else:
-            result = ''
-
-        return result
+            return ''
 
     if variable == 'CES-PMT-TYPE' and doc:
         pmt_type = doc.get('payment_type')

@@ -1,0 +1,208 @@
+[
+{
+    "doctype": "Asset",
+    "default": "ACC-ASS-.YYYY.-",
+    "ces_custom": "ACC-ASS-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Asset Capitalization",
+    "default": "ACC-ASC-.YYYY.-",
+    "ces_custom": "ACC-ASC-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Asset Depreciation Schedule",
+    "default": "ACC-ADS-.YYYY.-",
+    "ces_custom": "ACC-ADS-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Asset Maintenance Log",
+    "default": "ACC-AML-.YYYY.-",
+    "ces_custom": "ACC-AML-.CES-YYYY-BE.-"
+},
+{
+    "doctype": "Asset Repair",
+    "default": "ACC-ASR-.YYYY.-",
+    "ces_custom": "ACC-ASR-.CES-YYYY-BE.-"
+},
+{
+    "doctype": "Bank Transaction",
+    "default": "ACC-BTN-.YYYY.",
+    "ces_custom": "ACC-BTN-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Blanket Order",
+    "default": "MFG-BLR-.YYYY.-",
+    "ces_custom": "MFG-BLR-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Campaign",
+    "default": "SAL-CAM-.YYYY.-",
+    "ces_custom": "SAL-CAM-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Customer",
+    "default": "CUST-.YYYY.-",
+    "ces_custom": "CUST-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Delivery Note",
+    "default": "MAT-DN-.YYYY.-\nMAT-DN-RET-.YYYY.-",
+    "ces_custom": "MAT-DN-.CES-YYMM-BE.-\nMAT-DN-RET-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Delivery Trip",
+    "default": "MAT-DT-.YYYY.-",
+    "ces_custom": "MAT-DT-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Driver",
+    "default": "HR-DRI-.YYYY.-",
+    "ces_custom": "HR-DRI-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Dunning",
+    "default": "DUNN-.MM.-.YY.-",
+    "ces_custom": "DUNN-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Employee",
+    "default": "HR-EMP-",
+    "ces_custom": "HR-EMP-.CES-YY-BE."
+},
+{
+
+    "doctype": "Item",
+    "default": "STO-ITEM-.YYYY.-",
+    "ces_custom": "STO-ITEM-.CES-YY-BE."
+},
+{
+    "doctype": "Journal Entry",
+    "default": "ACC-JV-.YYYY.-",
+    "ces_custom": "ACC-JV-.CES-JV-TYPE.CES-YYMM-BE.-"
+},
+{
+    "doctype": "POS Invoice",
+    "default": "ACC-PSINV-.YYYY.-",
+    "ces_custom": "ACC-PSINV-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Packing Slip",
+    "default": "MAT-PAC-.YYYY.-",
+    "ces_custom": "MAT-PAC-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Payment Entry",
+    "default": "ACC-PAY-.YYYY.-",
+    "ces_custom": "ACC-.CES-PMT-TYPE.-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Payment Request",
+    "default": "ACC-PRQ-.YYYY.-",
+    "ces_custom": "ACC-PRQ-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Pick List",
+    "default": "STO-PICK-.YYYY.-",
+    "ces_custom": "STO-PICK-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Project Update",
+    "default": "PROJ-UPD-.YYYY.-",
+    "ces_custom": "PROJ-UPD-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Purchase Invoice",
+    "default": "ACC-PINV-.YYYY.-\nACC-PINV-RET-.YYYY.-",
+    "ces_custom": "ACC-PINV-.CES-YYMM-BE.-\nACC-PINV-RET-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Purchase Order",
+    "default": "PUR-ORD-.YYYY.-",
+    "ces_custom": ".CES-COM-ABBR.-PO-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Purchase Receipt",
+    "default": "MAT-PRE-.YYYY.-\nMAT-PR-RET-.YYYY.-",
+    "ces_custom": "MAT-CES-YYMM-BE-.YYYY.-\nMAT-PRE-RET-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Quality Inspection",
+    "default": "MAT-QA-.YYYY.-",
+    "ces_custom": "MAT-QA-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Quotation",
+    "default": "SAL-QTN-.YYYY.-",
+    "ces_custom": ".CES-COM-ABBR.-QTN-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Request for Quotation",
+    "default": "PUR-RFQ-.YYYY.-",
+    "ces_custom": ".CES-COM-ABBR.-RFQ-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Sales Invoice",
+    "default": "ACC-SINV-.YYYY.-\nACC-SINV-RET-.YYYY.-",
+    "ces_custom": ".CES-COM-ABBR.-INV-.CES-YYMM-BE.-\n.CES-COM-ABBR.-INV-RET-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Sales Order",
+    "default": "SAL-ORD-.YYYY.-",
+    "ces_custom": "SAL-ORD-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Shareholder",
+    "default": "ACC-SH-.YYYY.-",
+    "ces_custom": ".CES-COM-ABBR.-SH-"
+},
+{
+    "doctype": "Stock Entry",
+    "default": "MAT-STE-.YYYY.-",
+    "ces_custom": "MAT-STE-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Stock Reconciliation",
+    "default": "MAT-RECO-.YYYY.-",
+    "ces_custom": "MAT-RECO-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Subcontracting Order",
+    "default": "SC-ORD-.YYYY.-",
+    "ces_custom": "MAT-RECO-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Subcontracting Receipt",
+    "default": "MAT-SCR-.YYYY.-\nMAT-SCR-RET-.YYYY.-",
+    "ces_custom": "MAT-SCR-.CES-YYMM-BE.-\nMAT-SCR-RET-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Supplier",
+    "default": "SUP-.YYYY.-",
+    "ces_custom": "SUP-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Supplier Quotation",
+    "default": "SUP-.YYYY.-",
+    "ces_custom": "SUP-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Supplier Scorecard Period",
+    "default": "PU-SSP-.YYYY.-",
+    "ces_custom": "PUR-SSP-.CES-YY-BE.-"
+},
+{
+    "doctype": "Timesheet",
+    "default": "TS-.YYYY.-",
+    "ces_custom": "TS-.CES-YYYY-BE.-"
+},
+{
+    "doctype": "Warranty Claim",
+    "default": "SER-WRN-.YYYY.-",
+    "ces_custom": "SER-WRN-.CES-YYYY-BE.-"
+},
+{
+    "doctype": "Work Order",
+    "default": "MFG-WO-.YYYY.-",
+    "ces_custom": "MFG-WO-.CES-YYMM-BE.-"
+}
+]

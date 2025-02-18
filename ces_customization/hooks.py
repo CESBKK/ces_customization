@@ -298,11 +298,4 @@ fixtures = [
     {
         "dt": "Bank"
     },
-    # Thai UOM หน่วยนับที่ใช้สำหรับจัดทำใบสั่งซื้อ บส.01  ในระบบ GFMIS
-    # {
-    #     "dt": "UOM"
-    # },
-    # {
-    #     "dt": "UOM Conversion Factor"
-    # },
 ]

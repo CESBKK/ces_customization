@@ -1,0 +1,37 @@
+[
+{
+    "doctype": "Additional Salary",
+    "default": "HR-ADS-.YY.-.MM.-",
+    "ces_custom": "HR-ADS-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Appraisal",
+    "default": "HR-APR-.YYYY.-",
+    "ces_custom": "HR-EXP-.CES-YYYY-BE.-"
+},
+{
+    "doctype": "Employee Advance",
+    "default": "HR-EAD-.YYYY.-",
+    "ces_custom": "HR-EAD-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Expense Claim",
+    "default": "HR-EXP-.YYYY.-",
+    "ces_custom": "HR-EXP-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Leave Allocation",
+    "default": "HR-LAL-.YYYY.-",
+    "ces_custom": "HR-LAL-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Leave Application",
+    "default": "HR-LAP-.YYYY.-",
+    "ces_custom": "HR-LAP-.CES-YYMM-BE.-"
+},
+{
+    "doctype": "Vehicle Log",
+    "default": "HR-VLOG-.YYYY.-",
+    "ces_custom": "HR-VLOG-.CES-YYMM-BE.-"
+}
+]
