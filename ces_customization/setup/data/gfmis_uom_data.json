@@ -742,7 +742,7 @@
 {
     "uom": "MIS",
     "uom_name": "ไมโครวินาที",
-    "must_be_whole_number": 0
+    "must_be_whole_number": 1
 },
 {
     "uom": "ML",
@@ -842,7 +842,7 @@
 {
     "uom": "U20",
     "uom_name": "นัด",
-    "must_be_whole_number": 0
+    "must_be_whole_number": 1
 },
 {
     "uom": "U21",
@@ -922,17 +922,17 @@
 {
     "uom": "U35",
     "uom_name": "ไมโครเมตร",
-    "must_be_whole_number": 0
+    "must_be_whole_number": 1
 },
 {
     "uom": "U36",
     "uom_name": "ไมโครกรัม/ลูกบาศก์เมตร",
-    "must_be_whole_number": 0
+    "must_be_whole_number": 1
 },
 {
     "uom": "U37",
     "uom_name": "ไมโครลิตร",
-    "must_be_whole_number": 0
+    "must_be_whole_number": 1
 },
 {
     "uom": "U4",
@@ -987,12 +987,12 @@
 {
     "uom": "WKS",
     "uom_name": "สัปดาห์",
-    "must_be_whole_number": 0
+    "must_be_whole_number": 1
 },
 {
     "uom": "Y",
     "uom_name": "ปี",
-    "must_be_whole_number": 0
+    "must_be_whole_number": 1
 },
 {
     "uom": "YD",

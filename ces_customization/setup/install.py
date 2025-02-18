@@ -19,8 +19,8 @@ def after_install():
     except Exception as e:
         BUG_REPORT_URL = 'https://github.com/CESBKK/ces_customization/issues/new'
         click.secho(
-            'Installation for CES Customization app failed due to an error.'
-            'Please try re-installing the app or'
+            'Installation for CES Customization app failed due to an error. '
+            'Please try re-installing the app or '
             f'report the issue on {BUG_REPORT_URL} if not resolved.',
             fg='bright_red',
         )
@@ -60,7 +60,9 @@ def naming_series_property_setter(doctype,
 
 def change_naming_series(action: str = 'install', module: str = 'erpnext'):
     json_data = json.loads(
-        open(frappe.get_app_path('ces_customization', 'setup', 'data', f'naming_series_data_{module}.json')).read()
+        open(
+            frappe.get_app_path('ces_customization', 'setup', 'data', f'naming_series_data_{module}.json')
+        ).read()
     )
 
     if action == 'install':
@@ -100,8 +102,11 @@ def add_uom_data():
     Note: UOMs are imported only. No uninstallation when app uninstalled.
     '''
     uoms = json.loads(
-        open(frappe.get_app_path('ces_customization', 'setup', 'data', 'gfmis_uom_data.json')).read()
+        open(
+            frappe.get_app_path('ces_customization', 'setup', 'data', 'gfmis_uom_data.json')
+        ).read()
     )
+
     for d in uoms:
         if not frappe.db.exists('UOM', _(d.get('uom_name'))):
             frappe.get_doc(
