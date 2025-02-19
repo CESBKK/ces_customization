@@ -1,0 +1,751 @@
+[
+{
+    "category": "Length",
+    "from_uom": "'",
+    "to_uom": "นิ้ว",
+    "abbr": "'",
+    "value": "1"
+},
+{
+    "category": "Area",
+    "from_uom": "\"2",
+    "to_uom": "ตารางนิ้ว",
+    "abbr": "\"2",
+    "value": "1"
+},
+{
+    "category": "Area",
+    "from_uom": "ACR",
+    "to_uom": "เอเคอร์",
+    "abbr": "ACR",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "AU",
+    "to_uom": "หน่วยนับกิจกรรม",
+    "abbr": "AU",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "BAG",
+    "to_uom": "ถุง",
+    "abbr": "BAG",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "BK",
+    "to_uom": "เล่ม",
+    "abbr": "BK",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "BT.",
+    "to_uom": "ขวด",
+    "abbr": "BT.",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "CAB",
+    "to_uom": "ตู้",
+    "abbr": "CAB",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "CAN",
+    "to_uom": "กระป๋อง",
+    "abbr": "CAN",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "CAR",
+    "to_uom": "คัน",
+    "abbr": "CAR",
+    "value": "1"
+},
+{
+    "category": "Volume",
+    "from_uom": "CCM",
+    "to_uom": "ลูกบาศก์เซนติเมตร",
+    "abbr": "CCM",
+    "value": "1"
+},
+{
+    "category": "Length",
+    "from_uom": "CM",
+    "to_uom": "เซนติเมตร",
+    "abbr": "CM",
+    "value": "1"
+},
+{
+    "category": "Area",
+    "from_uom": "CM2",
+    "to_uom": "ตารางเซนติเมตร",
+    "abbr": "CM2",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "CRT",
+    "to_uom": "กล่อง",
+    "abbr": "CRT",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "CT",
+    "to_uom": "คาร์ตัน",
+    "abbr": "CT",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "CUP",
+    "to_uom": "ถ้วย",
+    "abbr": "CUP",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "CV",
+    "to_uom": "หีบ",
+    "abbr": "CV",
+    "value": "1"
+},
+{
+    "category": "Time",
+    "from_uom": "DAY",
+    "to_uom": "วัน",
+    "abbr": "DAY",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "DR",
+    "to_uom": "ถัง",
+    "abbr": "DR",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "DZ",
+    "to_uom": "โหล",
+    "abbr": "DZ",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "EA",
+    "to_uom": "ชิ้น",
+    "abbr": "EA",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "FIL",
+    "to_uom": "แฟ้ม",
+    "abbr": "FIL",
+    "value": "1"
+},
+{
+    "category": "Volume",
+    "from_uom": "FOZ",
+    "to_uom": "ออนซ์หน่วยวัดของเหลว US",
+    "abbr": "FOZ",
+    "value": "1"
+},
+{
+    "category": "Length",
+    "from_uom": "FT",
+    "to_uom": "ฟุต",
+    "abbr": "FT",
+    "value": "1"
+},
+{
+    "category": "Mass",
+    "from_uom": "G",
+    "to_uom": "กรัม",
+    "abbr": "G",
+    "value": "1"
+},
+{
+    "category": "Mass",
+    "from_uom": "GAU",
+    "to_uom": "กรัมทองคำ",
+    "abbr": "GAU",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "GRO",
+    "to_uom": "ตัวใหญ่",
+    "abbr": "GRO",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "GRP",
+    "to_uom": "กลุ่ม",
+    "abbr": "GRP",
+    "value": "1"
+},
+{
+    "category": "Time",
+    "from_uom": "H",
+    "to_uom": "ชั่วโมง",
+    "abbr": "H",
+    "value": "1"
+},
+{
+    "category": "Area",
+    "from_uom": "HA",
+    "to_uom": "เฮกตาร์",
+    "abbr": "HA",
+    "value": "1"
+},
+{
+    "category": "Time",
+    "from_uom": "MS",
+    "to_uom": "พิโควินาที",
+    "abbr": "MS",
+    "value": "1"
+},
+{
+    "category": "Time",
+    "from_uom": "MSE",
+    "to_uom": "มิลลิวินาที",
+    "abbr": "MSE",
+    "value": "1"
+},
+{
+    "category": "Time",
+    "from_uom": "MTH",
+    "to_uom": "เดือน",
+    "abbr": "MTH",
+    "value": "1"
+},
+{
+    "category": "Time",
+    "from_uom": "NS",
+    "to_uom": "นาโนวินาที",
+    "abbr": "NS",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "P",
+    "to_uom": "จุด",
+    "abbr": "P",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "PAA",
+    "to_uom": "คู่",
+    "abbr": "PAA",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "PAC",
+    "to_uom": "แพค/ห่อ",
+    "abbr": "PAC",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "PAL",
+    "to_uom": "แพลเลต",
+    "abbr": "PAL",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "PRD",
+    "to_uom": "งวด",
+    "abbr": "PRD",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "PRS",
+    "to_uom": "คน",
+    "abbr": "PRS",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "RM",
+    "to_uom": "รีม",
+    "abbr": "RM",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "ROL",
+    "to_uom": "Roll",
+    "abbr": "ROL",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "SHE",
+    "to_uom": "ผืน",
+    "abbr": "SHE",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "SHT",
+    "to_uom": "แผ่น",
+    "abbr": "SHT",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "ST",
+    "to_uom": "ชุด",
+    "abbr": "ST",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "STK",
+    "to_uom": "ท่อน",
+    "abbr": "STK",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "SYS",
+    "to_uom": "ระบบ",
+    "abbr": "SYS",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "TM",
+    "to_uom": "ครั้ง",
+    "abbr": "TM",
+    "value": "1"
+},
+{
+    "category": "Mass",
+    "from_uom": "TO",
+    "to_uom": "ตัน",
+    "abbr": "TO",
+    "value": "1"
+},
+{
+    "category": "Time",
+    "from_uom": "HR.",
+    "to_uom": "ชั่วโมง",
+    "abbr": "HR.",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "JOB",
+    "to_uom": "งาน",
+    "abbr": "JOB",
+    "value": "1"
+},
+{
+    "category": "Mass",
+    "from_uom": "KG",
+    "to_uom": "กิโลกรัม",
+    "abbr": "KG",
+    "value": "1"
+},
+{
+    "category": "Length",
+    "from_uom": "KM",
+    "to_uom": "กิโลเมตร",
+    "abbr": "KM",
+    "value": "1"
+},
+{
+    "category": "Area",
+    "from_uom": "KM2",
+    "to_uom": "ตารางกิโลเมตร",
+    "abbr": "KM2",
+    "value": "1"
+},
+{
+    "category": "Volume",
+    "from_uom": "L",
+    "to_uom": "ลิตร",
+    "abbr": "L",
+    "value": "1"
+},
+{
+    "category": "Mass",
+    "from_uom": "LB",
+    "to_uom": "US ปอนด์",
+    "abbr": "LB",
+    "value": "1"
+},
+{
+    "category": "Length",
+    "from_uom": "M",
+    "to_uom": "เมตร",
+    "abbr": "M",
+    "value": "1"
+},
+{
+    "category": "Area",
+    "from_uom": "M2",
+    "to_uom": "ตารางเมตร",
+    "abbr": "M2",
+    "value": "1"
+},
+{
+    "category": "Volume",
+    "from_uom": "M3",
+    "to_uom": "ลูกบาศก์เมตร",
+    "abbr": "M3",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "MAC",
+    "to_uom": "เครื่อง",
+    "abbr": "MAC",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "MD",
+    "to_uom": "มัด",
+    "abbr": "MD",
+    "value": "1"
+},
+{
+    "category": "Mass",
+    "from_uom": "MG",
+    "to_uom": "มิลลิกรัม",
+    "abbr": "MG",
+    "value": "1"
+},
+{
+    "category": "Length",
+    "from_uom": "MI",
+    "to_uom": "ไมล์",
+    "abbr": "MI",
+    "value": "1"
+},
+{
+    "category": "Area",
+    "from_uom": "MI2",
+    "to_uom": "ตารางไมล์",
+    "abbr": "MI2",
+    "value": "1"
+},
+{
+    "category": "Time",
+    "from_uom": "MIN",
+    "to_uom": "นาที",
+    "abbr": "MIN",
+    "value": "1"
+},
+{
+    "category": "Time",
+    "from_uom": "MIS",
+    "to_uom": "ไมโครวินาที",
+    "abbr": "MIS",
+    "value": "1"
+},
+{
+    "category": "Volume",
+    "from_uom": "ML",
+    "to_uom": "มิลลิลิตร",
+    "abbr": "ML",
+    "value": "1"
+},
+{
+    "category": "Length",
+    "from_uom": "MM",
+    "to_uom": "มิลลิเมตร",
+    "abbr": "MM",
+    "value": "1"
+},
+{
+    "category": "Area",
+    "from_uom": "MM2",
+    "to_uom": "ตารางมิลลิเมตร",
+    "abbr": "MM2",
+    "value": "1"
+},
+{
+    "category": "Mass",
+    "from_uom": "TON",
+    "to_uom": "US ตัน",
+    "abbr": "TON",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "TUB",
+    "to_uom": "ท่อ",
+    "abbr": "TUB",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U1",
+    "to_uom": "แท่ง",
+    "abbr": "U1",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U10",
+    "to_uom": "ขด",
+    "abbr": "U10",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U11",
+    "to_uom": "โคม",
+    "abbr": "U11",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U12",
+    "to_uom": "คิว",
+    "abbr": "U12",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U13",
+    "to_uom": "ปี๊บ",
+    "abbr": "U13",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U14",
+    "to_uom": "ซอง",
+    "abbr": "U14",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U15",
+    "to_uom": "ดวง",
+    "abbr": "U15",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U16",
+    "to_uom": "ดอก",
+    "abbr": "U16",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U17",
+    "to_uom": "แผง",
+    "abbr": "U17",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U18",
+    "to_uom": "ตลับ",
+    "abbr": "U18",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U19",
+    "to_uom": "เที่ยว",
+    "abbr": "U19",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U2",
+    "to_uom": "ตัว",
+    "abbr": "U2",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U20",
+    "to_uom": "นัด",
+    "abbr": "U20",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U21",
+    "to_uom": "แท่น",
+    "abbr": "U21",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U22",
+    "to_uom": "บาน",
+    "abbr": "U22",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U23",
+    "to_uom": "ใบ",
+    "abbr": "U23",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U24",
+    "to_uom": "ภาพ/รูป",
+    "abbr": "U24",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U25",
+    "to_uom": "เรือน",
+    "abbr": "U25",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U26",
+    "to_uom": "ล้อ",
+    "abbr": "U26",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U27",
+    "to_uom": "ลัง",
+    "abbr": "U27",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U28",
+    "to_uom": "วง",
+    "abbr": "U28",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U29",
+    "to_uom": "เส้น",
+    "abbr": "U29",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U3",
+    "to_uom": "ลูก",
+    "abbr": "U3",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U30",
+    "to_uom": "หลอด",
+    "abbr": "U30",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U31",
+    "to_uom": "หลัง",
+    "abbr": "U31",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U32",
+    "to_uom": "เม็ด",
+    "abbr": "U32",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U4",
+    "to_uom": "กระสอบ",
+    "abbr": "U4",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U5",
+    "to_uom": "กรง",
+    "abbr": "U5",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U6",
+    "to_uom": "กรอบ",
+    "abbr": "U6",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U7",
+    "to_uom": "กระถาง",
+    "abbr": "U7",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U8",
+    "to_uom": "กระบอก",
+    "abbr": "U8",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "U9",
+    "to_uom": "ก้อน",
+    "abbr": "U9",
+    "value": "1"
+},
+{
+    "category": "Classifier",
+    "from_uom": "UNT",
+    "to_uom": "หน่วย",
+    "abbr": "UNT",
+    "value": "1"
+},
+{
+    "category": "Time",
+    "from_uom": "WKS",
+    "to_uom": "สัปดาห์",
+    "abbr": "WKS",
+    "value": "1"
+},
+{
+    "category": "Time",
+    "from_uom": "Y",
+    "to_uom": "ปี",
+    "abbr": "Y",
+    "value": "1"
+},
+{
+    "category": "Length",
+    "from_uom": "YD",
+    "to_uom": "หลา",
+    "abbr": "YD",
+    "value": "1"
+}
+]

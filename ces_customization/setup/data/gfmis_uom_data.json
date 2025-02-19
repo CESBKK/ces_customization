@@ -1,11 +1,21 @@
 [
 {
     "uom": "'",
+    "uom_name": "'",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "นิ้ว",
     "uom_name": "นิ้ว",
     "must_be_whole_number": 0
 },
 {
     "uom": "\"2",
+    "uom_name": "\"2",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ตารางนิ้ว",
     "uom_name": "ตารางนิ้ว",
     "must_be_whole_number": 0
 },
@@ -26,21 +36,41 @@
 },
 {
     "uom": "ACR",
+    "uom_name": "ACR",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "เอเคอร์",
     "uom_name": "เอเคอร์",
     "must_be_whole_number": 0
 },
 {
     "uom": "AU",
+    "uom_name": "AU",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "หน่วยนับกิจกรรม",
     "uom_name": "หน่วยนับกิจกรรม",
     "must_be_whole_number": 0
 },
 {
     "uom": "BAG",
+    "uom_name": "BAG",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ถุง",
     "uom_name": "ถุง",
     "must_be_whole_number": 0
 },
 {
     "uom": "BK",
+    "uom_name": "BK",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "เล่ม",
     "uom_name": "เล่ม",
     "must_be_whole_number": 0
 },
@@ -51,6 +81,11 @@
 },
 {
     "uom": "BT.",
+    "uom_name": "BT.",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ขวด",
     "uom_name": "ขวด",
     "must_be_whole_number": 0
 },
@@ -61,21 +96,41 @@
 },
 {
     "uom": "CAB",
+    "uom_name": "CAB",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ตู้",
     "uom_name": "ตู้",
     "must_be_whole_number": 0
 },
 {
     "uom": "CAN",
+    "uom_name": "CAN",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "กระป๋อง",
     "uom_name": "กระป๋อง",
     "must_be_whole_number": 0
 },
 {
     "uom": "CAR",
+    "uom_name": "CAR",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "คัน",
     "uom_name": "คัน",
     "must_be_whole_number": 0
 },
 {
     "uom": "CCM",
+    "uom_name": "CCM",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ลูกบาศก์เซนติเมตร",
     "uom_name": "ลูกบาศก์เซนติเมตร",
     "must_be_whole_number": 0
 },
@@ -91,11 +146,21 @@
 },
 {
     "uom": "CM",
+    "uom_name": "CM",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "เซนติเมตร",
     "uom_name": "เซนติเมตร",
     "must_be_whole_number": 0
 },
 {
     "uom": "CM2",
+    "uom_name": "CM2",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ตารางเซนติเมตร",
     "uom_name": "ตารางเซนติเมตร",
     "must_be_whole_number": 0
 },
@@ -106,17 +171,52 @@
 },
 {
     "uom": "CRT",
+    "uom_name": "CRT",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "กล่อง",
     "uom_name": "กล่อง",
     "must_be_whole_number": 0
 },
 {
     "uom": "CT",
+    "uom_name": "CT",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "คาร์ตัน",
     "uom_name": "คาร์ตัน",
     "must_be_whole_number": 0
 },
 {
+    "uom": "CUP",
+    "uom_name": "CUP",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ถ้วย",
+    "uom_name": "ถ้วย",
+    "must_be_whole_number": 0
+},
+{
     "uom": "CV",
+    "uom_name": "CV",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "หีบ",
     "uom_name": "หีบ",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "DAY",
+    "uom_name": "DAY",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "วัน",
+    "uom_name": "วัน",
     "must_be_whole_number": 0
 },
 {
@@ -131,16 +231,31 @@
 },
 {
     "uom": "DR",
+    "uom_name": "DR",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ถัง",
     "uom_name": "ถัง",
     "must_be_whole_number": 0
 },
 {
     "uom": "DZ",
+    "uom_name": "DZ",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "โหล",
     "uom_name": "โหล",
     "must_be_whole_number": 0
 },
 {
     "uom": "EA",
+    "uom_name": "EA",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ชิ้น",
     "uom_name": "ชิ้น",
     "must_be_whole_number": 0
 },
@@ -156,16 +271,31 @@
 },
 {
     "uom": "FIL",
+    "uom_name": "FIL",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "แฟ้ม",
     "uom_name": "แฟ้ม",
     "must_be_whole_number": 0
 },
 {
     "uom": "FOZ",
+    "uom_name": "FOZ",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ออนซ์หน่วยวัดของเหลว US",
     "uom_name": "ออนซ์หน่วยวัดของเหลว US",
     "must_be_whole_number": 0
 },
 {
     "uom": "FT",
+    "uom_name": "FT",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ฟุต",
     "uom_name": "ฟุต",
     "must_be_whole_number": 0
 },
@@ -186,6 +316,11 @@
 },
 {
     "uom": "G",
+    "uom_name": "G",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "กรัม",
     "uom_name": "กรัม",
     "must_be_whole_number": 0
 },
@@ -196,6 +331,11 @@
 },
 {
     "uom": "GAU",
+    "uom_name": "GAU",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "กรัมทองคำ",
     "uom_name": "กรัมทองคำ",
     "must_be_whole_number": 0
 },
@@ -236,21 +376,41 @@
 },
 {
     "uom": "GRO",
+    "uom_name": "GRO",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ตัวใหญ่",
     "uom_name": "ตัวใหญ่",
     "must_be_whole_number": 0
 },
 {
     "uom": "GRP",
+    "uom_name": "GRP",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "กลุ่ม",
     "uom_name": "กลุ่ม",
     "must_be_whole_number": 0
 },
 {
     "uom": "H",
+    "uom_name": "H",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ชั่วโมง",
     "uom_name": "ชั่วโมง",
     "must_be_whole_number": 0
 },
 {
     "uom": "HA",
+    "uom_name": "HA",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "เฮกตาร์",
     "uom_name": "เฮกตาร์",
     "must_be_whole_number": 0
 },
@@ -291,6 +451,11 @@
 },
 {
     "uom": "MS",
+    "uom_name": "MS",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "พิโควินาที",
     "uom_name": "พิโควินาที",
     "must_be_whole_number": 0
 },
@@ -306,11 +471,21 @@
 },
 {
     "uom": "MSE",
+    "uom_name": "MSE",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "มิลลิวินาที",
     "uom_name": "มิลลิวินาที",
     "must_be_whole_number": 0
 },
 {
     "uom": "MTH",
+    "uom_name": "MTH",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "เดือน",
     "uom_name": "เดือน",
     "must_be_whole_number": 0
 },
@@ -351,6 +526,11 @@
 },
 {
     "uom": "NS",
+    "uom_name": "NS",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "นาโนวินาที",
     "uom_name": "นาโนวินาที",
     "must_be_whole_number": 0
 },
@@ -361,21 +541,41 @@
 },
 {
     "uom": "P",
+    "uom_name": "P",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "จุด",
     "uom_name": "จุด",
     "must_be_whole_number": 0
 },
 {
     "uom": "PAA",
+    "uom_name": "PAA",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "คู่",
     "uom_name": "คู่",
     "must_be_whole_number": 0
 },
 {
     "uom": "PAC",
+    "uom_name": "PAC",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "แพค/ห่อ",
     "uom_name": "แพค/ห่อ",
     "must_be_whole_number": 0
 },
 {
     "uom": "PAL",
+    "uom_name": "PAL",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "แพลเลต",
     "uom_name": "แพลเลต",
     "must_be_whole_number": 0
 },
@@ -416,11 +616,21 @@
 },
 {
     "uom": "PRD",
+    "uom_name": "PRD",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "งวด",
     "uom_name": "งวด",
     "must_be_whole_number": 0
 },
 {
     "uom": "PRS",
+    "uom_name": "PRS",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "คน",
     "uom_name": "คน",
     "must_be_whole_number": 0
 },
@@ -451,11 +661,21 @@
 },
 {
     "uom": "RM",
+    "uom_name": "RM",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "รีม",
     "uom_name": "รีม",
     "must_be_whole_number": 0
 },
 {
     "uom": "ROL",
+    "uom_name": "ROL",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "Roll",
     "uom_name": "Roll",
     "must_be_whole_number": 0
 },
@@ -466,26 +686,51 @@
 },
 {
     "uom": "SHE",
+    "uom_name": "SHE",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ผืน",
     "uom_name": "ผืน",
     "must_be_whole_number": 0
 },
 {
     "uom": "SHT",
+    "uom_name": "SHT",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "แผ่น",
     "uom_name": "แผ่น",
     "must_be_whole_number": 0
 },
 {
     "uom": "ST",
+    "uom_name": "ST",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ชุด",
     "uom_name": "ชุด",
     "must_be_whole_number": 0
 },
 {
     "uom": "STK",
+    "uom_name": "STK",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ท่อน",
     "uom_name": "ท่อน",
     "must_be_whole_number": 0
 },
 {
     "uom": "SYS",
+    "uom_name": "SYS",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ระบบ",
     "uom_name": "ระบบ",
     "must_be_whole_number": 0
 },
@@ -496,12 +741,32 @@
 },
 {
     "uom": "TM",
+    "uom_name": "TM",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ครั้ง",
     "uom_name": "ครั้ง",
     "must_be_whole_number": 0
 },
 {
     "uom": "TO",
+    "uom_name": "TO",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ตัน",
     "uom_name": "ตัน",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "HR.",
+    "uom_name": "HR.",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ชั่วโมง",
+    "uom_name": "ชั่วโมง",
     "must_be_whole_number": 0
 },
 {
@@ -521,6 +786,11 @@
 },
 {
     "uom": "JOB",
+    "uom_name": "JOB",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "งาน",
     "uom_name": "งาน",
     "must_be_whole_number": 0
 },
@@ -532,6 +802,16 @@
 {
     "uom": "KD3",
     "uom_name": "กิโลกรัมต่อลูกบาศก์เดซิเมตร",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "KG",
+    "uom_name": "KG",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "กิโลกรัม",
+    "uom_name": "กิโลกรัม",
     "must_be_whole_number": 0
 },
 {
@@ -561,11 +841,21 @@
 },
 {
     "uom": "KM",
+    "uom_name": "KM",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "กิโลเมตร",
     "uom_name": "กิโลเมตร",
     "must_be_whole_number": 0
 },
 {
     "uom": "KM2",
+    "uom_name": "KM2",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ตารางกิโลเมตร",
     "uom_name": "ตารางกิโลเมตร",
     "must_be_whole_number": 0
 },
@@ -596,11 +886,21 @@
 },
 {
     "uom": "L",
+    "uom_name": "L",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ลิตร",
     "uom_name": "ลิตร",
     "must_be_whole_number": 0
 },
 {
     "uom": "LB",
+    "uom_name": "LB",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "US ปอนด์",
     "uom_name": "US ปอนด์",
     "must_be_whole_number": 0
 },
@@ -631,6 +931,11 @@
 },
 {
     "uom": "M",
+    "uom_name": "M",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "เมตร",
     "uom_name": "เมตร",
     "must_be_whole_number": 0
 },
@@ -651,6 +956,11 @@
 },
 {
     "uom": "M2",
+    "uom_name": "M2",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ตารางเมตร",
     "uom_name": "ตารางเมตร",
     "must_be_whole_number": 0
 },
@@ -666,6 +976,11 @@
 },
 {
     "uom": "M3",
+    "uom_name": "M3",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ลูกบาศก์เมตร",
     "uom_name": "ลูกบาศก์เมตร",
     "must_be_whole_number": 0
 },
@@ -681,11 +996,21 @@
 },
 {
     "uom": "MAC",
+    "uom_name": "MAC",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "เครื่อง",
     "uom_name": "เครื่อง",
     "must_be_whole_number": 0
 },
 {
     "uom": "MD",
+    "uom_name": "MD",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "มัด",
     "uom_name": "มัด",
     "must_be_whole_number": 0
 },
@@ -696,6 +1021,11 @@
 },
 {
     "uom": "MG",
+    "uom_name": "MG",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "มิลลิกรัม",
     "uom_name": "มิลลิกรัม",
     "must_be_whole_number": 0
 },
@@ -726,26 +1056,51 @@
 },
 {
     "uom": "MI",
+    "uom_name": "MI",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ไมล์",
     "uom_name": "ไมล์",
     "must_be_whole_number": 0
 },
 {
     "uom": "MI2",
+    "uom_name": "MI2",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ตารางไมล์",
     "uom_name": "ตารางไมล์",
     "must_be_whole_number": 0
 },
 {
     "uom": "MIN",
+    "uom_name": "MIN",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "นาที",
     "uom_name": "นาที",
     "must_be_whole_number": 0
 },
 {
     "uom": "MIS",
+    "uom_name": "MIS",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ไมโครวินาที",
     "uom_name": "ไมโครวินาที",
-    "must_be_whole_number": 1
+    "must_be_whole_number": 0
 },
 {
     "uom": "ML",
+    "uom_name": "ML",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "มิลลิลิตร",
     "uom_name": "มิลลิลิตร",
     "must_be_whole_number": 0
 },
@@ -756,11 +1111,21 @@
 },
 {
     "uom": "MM",
+    "uom_name": "MM",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "มิลลิเมตร",
     "uom_name": "มิลลิเมตร",
     "must_be_whole_number": 0
 },
 {
     "uom": "MM2",
+    "uom_name": "MM2",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ตารางมิลลิเมตร",
     "uom_name": "ตารางมิลลิเมตร",
     "must_be_whole_number": 0
 },
@@ -771,141 +1136,281 @@
 },
 {
     "uom": "TON",
+    "uom_name": "TON",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "US ตัน",
     "uom_name": "US ตัน",
     "must_be_whole_number": 0
 },
 {
     "uom": "TUB",
+    "uom_name": "TUB",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ท่อ",
     "uom_name": "ท่อ",
     "must_be_whole_number": 0
 },
 {
     "uom": "U1",
+    "uom_name": "U1",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "แท่ง",
     "uom_name": "แท่ง",
     "must_be_whole_number": 0
 },
 {
     "uom": "U10",
+    "uom_name": "U10",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ขด",
     "uom_name": "ขด",
     "must_be_whole_number": 0
 },
 {
     "uom": "U11",
+    "uom_name": "U11",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "โคม",
     "uom_name": "โคม",
     "must_be_whole_number": 0
 },
 {
     "uom": "U12",
+    "uom_name": "U12",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "คิว",
     "uom_name": "คิว",
     "must_be_whole_number": 0
 },
 {
     "uom": "U13",
+    "uom_name": "U13",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ปี๊บ",
     "uom_name": "ปี๊บ",
     "must_be_whole_number": 0
 },
 {
     "uom": "U14",
+    "uom_name": "U14",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ซอง",
     "uom_name": "ซอง",
     "must_be_whole_number": 0
 },
 {
     "uom": "U15",
+    "uom_name": "U15",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ดวง",
     "uom_name": "ดวง",
     "must_be_whole_number": 0
 },
 {
     "uom": "U16",
+    "uom_name": "U16",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ดอก",
     "uom_name": "ดอก",
     "must_be_whole_number": 0
 },
 {
     "uom": "U17",
+    "uom_name": "U17",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "แผง",
     "uom_name": "แผง",
     "must_be_whole_number": 0
 },
 {
     "uom": "U18",
+    "uom_name": "U18",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ตลับ",
     "uom_name": "ตลับ",
     "must_be_whole_number": 0
 },
 {
     "uom": "U19",
+    "uom_name": "U19",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "เที่ยว",
     "uom_name": "เที่ยว",
     "must_be_whole_number": 0
 },
 {
     "uom": "U2",
+    "uom_name": "U2",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ตัว",
     "uom_name": "ตัว",
     "must_be_whole_number": 0
 },
 {
     "uom": "U20",
+    "uom_name": "U20",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "นัด",
     "uom_name": "นัด",
-    "must_be_whole_number": 1
+    "must_be_whole_number": 0
 },
 {
     "uom": "U21",
+    "uom_name": "U21",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "แท่น",
     "uom_name": "แท่น",
     "must_be_whole_number": 0
 },
 {
     "uom": "U22",
+    "uom_name": "U22",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "บาน",
     "uom_name": "บาน",
     "must_be_whole_number": 0
 },
 {
     "uom": "U23",
+    "uom_name": "U23",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ใบ",
     "uom_name": "ใบ",
     "must_be_whole_number": 0
 },
 {
     "uom": "U24",
+    "uom_name": "U24",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ภาพ/รูป",
     "uom_name": "ภาพ/รูป",
     "must_be_whole_number": 0
 },
 {
     "uom": "U25",
+    "uom_name": "U25",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "เรือน",
     "uom_name": "เรือน",
     "must_be_whole_number": 0
 },
 {
     "uom": "U26",
+    "uom_name": "U26",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ล้อ",
     "uom_name": "ล้อ",
     "must_be_whole_number": 0
 },
 {
     "uom": "U27",
+    "uom_name": "U27",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ลัง",
     "uom_name": "ลัง",
     "must_be_whole_number": 0
 },
 {
     "uom": "U28",
+    "uom_name": "U28",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "วง",
     "uom_name": "วง",
     "must_be_whole_number": 0
 },
 {
     "uom": "U29",
+    "uom_name": "U29",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "เส้น",
     "uom_name": "เส้น",
     "must_be_whole_number": 0
 },
 {
     "uom": "U3",
+    "uom_name": "U3",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ลูก",
     "uom_name": "ลูก",
     "must_be_whole_number": 0
 },
 {
     "uom": "U30",
+    "uom_name": "U30",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "หลอด",
     "uom_name": "หลอด",
     "must_be_whole_number": 0
 },
 {
     "uom": "U31",
+    "uom_name": "U31",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "หลัง",
     "uom_name": "หลัง",
     "must_be_whole_number": 0
 },
 {
     "uom": "U32",
+    "uom_name": "U32",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "เม็ด",
     "uom_name": "เม็ด",
     "must_be_whole_number": 0
 },
@@ -922,20 +1427,25 @@
 {
     "uom": "U35",
     "uom_name": "ไมโครเมตร",
-    "must_be_whole_number": 1
+    "must_be_whole_number": 0
 },
 {
     "uom": "U36",
     "uom_name": "ไมโครกรัม/ลูกบาศก์เมตร",
-    "must_be_whole_number": 1
+    "must_be_whole_number": 0
 },
 {
     "uom": "U37",
     "uom_name": "ไมโครลิตร",
-    "must_be_whole_number": 1
+    "must_be_whole_number": 0
 },
 {
     "uom": "U4",
+    "uom_name": "U4",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "กระสอบ",
     "uom_name": "กระสอบ",
     "must_be_whole_number": 0
 },
@@ -946,31 +1456,61 @@
 },
 {
     "uom": "U5",
+    "uom_name": "U5",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "กรง",
     "uom_name": "กรง",
     "must_be_whole_number": 0
 },
 {
     "uom": "U6",
+    "uom_name": "U6",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "กรอบ",
     "uom_name": "กรอบ",
     "must_be_whole_number": 0
 },
 {
     "uom": "U7",
+    "uom_name": "U7",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "กระถาง",
     "uom_name": "กระถาง",
     "must_be_whole_number": 0
 },
 {
     "uom": "U8",
+    "uom_name": "U8",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "กระบอก",
     "uom_name": "กระบอก",
     "must_be_whole_number": 0
 },
 {
     "uom": "U9",
+    "uom_name": "U9",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ก้อน",
     "uom_name": "ก้อน",
     "must_be_whole_number": 0
 },
 {
     "uom": "UNT",
+    "uom_name": "UNT",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "หน่วย",
     "uom_name": "หน่วย",
     "must_be_whole_number": 0
 },
@@ -986,16 +1526,31 @@
 },
 {
     "uom": "WKS",
+    "uom_name": "WKS",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "สัปดาห์",
     "uom_name": "สัปดาห์",
-    "must_be_whole_number": 1
+    "must_be_whole_number": 0
 },
 {
     "uom": "Y",
+    "uom_name": "Y",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "ปี",
     "uom_name": "ปี",
-    "must_be_whole_number": 1
+    "must_be_whole_number": 0
 },
 {
     "uom": "YD",
+    "uom_name": "YD",
+    "must_be_whole_number": 0
+},
+{
+    "uom": "หลา",
     "uom_name": "หลา",
     "must_be_whole_number": 0
 },
