@@ -2,8 +2,6 @@ import click
 import json
 import frappe
 from frappe import _
-# from frappe.custom.doctype.custom_field.custom_field import \
-#     create_custom_fields
 from frappe.custom.doctype.property_setter.property_setter import \
     make_property_setter
 
@@ -35,15 +33,6 @@ def after_app_install(app_name):
     if app_name == 'hrms':
         click.secho('Update Naming Series for DocTypes in HRMS...', fg='yellow')
         change_naming_series(action='install', module=app_name)
-
-
-# def make_custom_fields():
-#     print('Setup custom fields for erpnext...')
-#     create_custom_fields(ERP_CUSTOM_FIELDS, ignore_validate=True)
-#     create_custom_fields(BILLING_CUSTOM_FIELDS, ignore_validate=True)
-#     if 'hrms' in frappe.get_installed_apps():
-#         print('Setup custom fields for hrms...')
-#         create_custom_fields(HRMS_CUSTOM_FIELDS, ignore_validate=True)
 
 
 def naming_series_property_setter(doctype,
@@ -106,7 +95,6 @@ def add_uom_data():
             frappe.get_app_path('ces_customization', 'setup', 'data', 'gfmis_uom_data.json')
         ).read()
     )
-
     for d in uoms:
         if not frappe.db.exists('UOM', _(d.get('uom_name'))):
             frappe.get_doc(
@@ -116,5 +104,28 @@ def add_uom_data():
                     'name': _(d.get('uom')),
                     'must_be_whole_number': d.get('must_be_whole_number'),
                     'enabled': 1,
+                }
+            ).db_insert()
+
+    uom_conversions = json.loads(
+        open(
+            frappe.get_app_path('ces_customization', 'setup', 'data', 'gfmis_uom_conversion_data.json')
+        ).read()
+    )
+    for d in uom_conversions:
+        if not frappe.db.exists('UOM Category', _(d.get('category'))):
+            frappe.get_doc({'doctype': 'UOM Category', 'category_name': _(d.get('category'))}).db_insert()
+
+        if not frappe.db.exists(
+            'UOM Conversion Factor',
+            {'from_uom': _(d.get('from_uom')), 'to_uom': _(d.get('to_uom'))},
+        ):
+            frappe.get_doc(
+                {
+                    'doctype': 'UOM Conversion Factor',
+                    'category': _(d.get('category')),
+                    'from_uom': _(d.get('from_uom')),
+                    'to_uom': _(d.get('to_uom')),
+                    'value': d.get('value'),
                 }
             ).db_insert()
