@@ -1,14 +1,15 @@
 import frappe
 import frappe.defaults
 from frappe.model.naming import set_name_by_naming_series, set_name_from_naming_options, _format_autoname
-from erpnext.buying.doctype.supplier.supplier import Supplier
 from ces_customization.custom.naming import ces_format_autoname
+from frappe.model.document import Document
 
 
-class ces_Supplier(Supplier):
+class ces_Supplier(Document):
 
     def autoname(self):
-        print('ces_Supplier is used...')
+        # First part from ERPNext's default autoname located in
+        # erpnext/buying/doctype/supplier/supplier.py/Class Supplier
         supp_master_name = frappe.defaults.get_global_default("supp_master_name")
         if supp_master_name == "Supplier Name":
             self.name = self.supplier_name

@@ -1,9 +1,9 @@
 from datetime import datetime
-from erpnext.accounts.doctype.journal_entry.journal_entry import JournalEntry
 from ces_customization.custom.utils import populate_thai_date
+from frappe.model.document import Document
 
 
-class ces_JournalEntry(JournalEntry):
+class ces_JournalEntry(Document):
     '''This class populate Virtual DocField Data which we added to Journal Entry DocType'''
     @property
     def ces_posting_date_be(self):

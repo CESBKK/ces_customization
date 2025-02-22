@@ -1,9 +1,9 @@
 from datetime import datetime
-from erpnext.accounts.doctype.payment_entry.payment_entry import PaymentEntry
 from ces_customization.custom.utils import populate_thai_date
+from frappe.model.document import Document
 
 
-class ces_PaymentEntry(PaymentEntry):
+class ces_PaymentEntry(Document):
     '''This class populate Virtual DocField Data which we added to Payment Entry DocType'''
     @property
     def ces_posting_date_be(self):
