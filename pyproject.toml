@@ -25,3 +25,8 @@ packages = [
     "libthai0",
     "fonts-tlwg-laksaman-otf"
 ]
+
+[project.urls]
+Homepage = "https://github.com/CESBKK/ces_customization"
+Repository = "https://github.com/CESBKK/ces_customization.git"
+"Bug Reports" = "https://github.com/CESBKK/ces_customization/issues"

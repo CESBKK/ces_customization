@@ -36,14 +36,16 @@ def after_app_install(app_name):
 
 
 def naming_series_property_setter(doctype,
+                                  fieldname,
                                   property,
                                   value,
+                                  property_type='Text',
                                   validate_fields=True):
     make_property_setter(doctype,
-                         'naming_series',
+                         fieldname,
                          property,
                          value,
-                         'Text',
+                         property_type,
                          validate_fields_for_doctype=validate_fields)
 
 
@@ -61,6 +63,7 @@ def change_naming_series(action: str = 'install', module: str = 'erpnext'):
 
     for d in json_data:
         doctype = d.get('doctype')
+        fieldname = d.get('fieldname')
         serie_value = d.get(target)
         serie_name = serie_value.split('\n')[0]
         validate_field = True
@@ -74,9 +77,9 @@ def change_naming_series(action: str = 'install', module: str = 'erpnext'):
             '''
             validate_field = False
 
-        naming_series_property_setter(doctype, 'default', '', validate_field)
-        naming_series_property_setter(doctype, 'options', serie_value, validate_field)
-        naming_series_property_setter(doctype, 'default', serie_name, validate_field)
+        naming_series_property_setter(doctype, fieldname, 'default', '', validate_field)
+        naming_series_property_setter(doctype, fieldname, 'options', serie_value, validate_field)
+        naming_series_property_setter(doctype, fieldname, 'default', serie_name, validate_field)
         frappe.clear_cache(doctype=doctype)
 
 
@@ -86,7 +89,6 @@ def add_uom_data():
     add Thai UOM หน่วยนับที่ใช้สำหรับจัดทำใบสั่งซื้อ บส.01 ในระบบ GFMIS
     Except:
     - CUP, DAY, KG - existed in erpnext default.
-    - HR. - already had 'H' for 'ชั่วโมง'
 
     Note: UOMs are imported only. No uninstallation when app uninstalled.
     '''
@@ -96,7 +98,10 @@ def add_uom_data():
         ).read()
     )
     for d in uoms:
-        if not frappe.db.exists('UOM', _(d.get('uom_name'))):
+        if not frappe.db.exists(
+            'UOM',
+            {'name': _(d.get('uom')), 'uom_name': _(d.get('uom_name'))},
+        ):
             frappe.get_doc(
                 {
                     'doctype': 'UOM',

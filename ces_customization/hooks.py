@@ -148,6 +148,8 @@ before_app_uninstall = "ces_customization.setup.uninstall.before_app_uninstall"
 override_doctype_class = {
     "Journal Entry": "ces_customization.overrides.journal_entry.ces_JournalEntry",
     "Payment Entry": "ces_customization.overrides.payment_entry.ces_PaymentEntry",
+    "Customer": "ces_customization.overrides.customer.ces_Customer",
+    "Supplier": "ces_customization.overrides.supplier.ces_Supplier",
 }
 
 # Document Events
