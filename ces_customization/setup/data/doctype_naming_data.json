@@ -1,0 +1,30 @@
+[
+{
+    "doctype": "Customer",
+    "property": "naming_rule",
+    "default": "",
+    "ces_custom": "Expression",
+    "type": "Data"
+},
+{
+    "doctype": "Customer",
+    "property": "autoname",
+    "default": "",
+    "ces_custom": "format:CUST-{CES-YY-BE}{MM}{#####}",
+    "type": "Data"
+},
+{
+    "doctype": "Supplier",
+    "property": "naming_rule",
+    "default": "",
+    "ces_custom": "Expression",
+    "type": "Data"
+},
+{
+    "doctype": "Supplier",
+    "property": "autoname",
+    "default": "",
+    "ces_custom": "format:SUPP-{CES-YY-BE}{MM}{#####}",
+    "type": "Data"
+}
+]

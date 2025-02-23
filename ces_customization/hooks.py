@@ -300,4 +300,8 @@ fixtures = [
     {
         "dt": "Bank"
     },
+    {
+        "dt": "Customer",
+        "filters": [["customer_name", "=", "Onetime Customer"]]
+    }
 ]

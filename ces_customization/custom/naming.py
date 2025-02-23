@@ -102,8 +102,8 @@ def parse_naming_series_variable(doc, variable):
 
 def ces_format_autoname(autoname: str, doc):
     """
-    Generate autoname by replacing all instances of CES braced params (fields, date params e.g. 'CES-YY-BE', 'CES-MM', 'CES-YY' etc., 
-    series) Independent of remaining string or separators.
+    Generate autoname by replacing all instances of CES braced params (fields, date params e.g.
+    'CES-YY-BE', 'CES-MM', 'CES-YY' etc., series) Independent of remaining string or separators.
 
     Example pattern: 'format:LOG-{MM}-{fieldname1}-{fieldname2}-{#####}'
 
@@ -117,12 +117,15 @@ def ces_format_autoname(autoname: str, doc):
         for part in [param[1:-1]]:
             if part.startswith('CES'):
                 output = parse_naming_series_variable(doc=doc, variable=part)
-            elif part.startswith("#"):
+            elif part.startswith('#'):
+                # Technically this should be passed to frappe's default processor
+                # but there is a bug as serie_name is blank and yield unexpected result.
+                # if it is fixed later on, we can remove this branch.
                 serie_name = f'CES-{doc.get("doctype")}'
                 digits = len(part)
                 output = getseries(serie_name, digits)
             else:
-                # left over which are ERPNext's default i.e. {MM} {DD} {YY}
+                # left over which are frappe's default i.e. {MM} {DD} {YY}
                 # We will pass this to _format_autoname.
                 output = '{' + part + '}'
         return output

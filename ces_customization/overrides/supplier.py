@@ -16,12 +16,14 @@ class ces_Supplier(Document):
         elif supp_master_name == "Naming Series":
             set_name_by_naming_series(self)
         else:
+            # second part is customization if ERPNext version change need to recheck the code
             autoname = frappe.get_meta(self.doctype).autoname
             _autoname = autoname.lower()
             if not _autoname.startswith("format:"):
                 set_name_from_naming_options(autoname, doc=self)
             else:
-                # First pass, process CES variables
+                # First pass, process CES variables and serie's sequence #####
                 autoname = ces_format_autoname(autoname, doc=self)
+
                 # Second pass, run thru default erpnext's processor
                 self.name = _format_autoname(autoname, self)

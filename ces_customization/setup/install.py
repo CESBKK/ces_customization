@@ -2,8 +2,8 @@ import click
 import json
 import frappe
 from frappe import _
-from frappe.custom.doctype.property_setter.property_setter import \
-    make_property_setter
+from frappe.defaults import set_global_default
+from frappe.custom.doctype.property_setter.property_setter import make_property_setter
 
 
 def after_install():
@@ -13,6 +13,8 @@ def after_install():
         change_naming_series()
         click.secho('Add GFMIS UOMs...', fg='yellow')
         add_uom_data()
+        click.secho('Set some DocType Default Value...', fg='yellow')
+        set_doctype_property()
         click.secho('Thank you for installing CES Customization!', fg='green')
     except Exception as e:
         BUG_REPORT_URL = 'https://github.com/CESBKK/ces_customization/issues/new'
@@ -40,11 +42,54 @@ def naming_series_property_setter(doctype,
                                   value,
                                   validate_fields=True):
     make_property_setter(doctype,
-                         'nameing_series',
+                         'naming_series',
                          property,
                          value,
                          'Text',
                          validate_fields_for_doctype=validate_fields)
+
+
+def set_doctype_property(action: str = 'install'):
+    if action == 'install':
+        target = 'ces_custom'
+    else:
+        target = 'default'
+
+    # Default value setter seems bug.  Please recheck settings again.
+    # - Buying Setting
+    # - Selling Setting
+    # - Stock Setting
+    doctype_naming_default_value = json.loads(
+        open(
+            frappe.get_app_path('ces_customization', 'setup', 'data', 'doctype_naming_default_value.json')
+        ).read()
+    )
+
+    for d in doctype_naming_default_value:
+        key = d.get('key')
+        value = d.get(target)
+        set_global_default(key, value)
+
+    # Doctype Naming works flawlessly
+    doctype_naming_data = json.loads(
+        open(
+            frappe.get_app_path('ces_customization', 'setup', 'data', 'doctype_naming_data.json')
+        ).read()
+    )
+
+    for d in doctype_naming_data:
+        doctype = d.get('doctype')
+        property = d.get('property')
+        fieldname = None
+        value = d.get(target)
+        type = d.get('type')
+        for_doctype = True
+        make_property_setter(doctype,
+                             fieldname,
+                             property,
+                             value,
+                             type,
+                             for_doctype)
 
 
 def change_naming_series(action: str = 'install', module: str = 'erpnext'):

@@ -1,6 +1,5 @@
-# import frappe
 import click
-from ces_customization.setup.install import change_naming_series
+from ces_customization.setup.install import change_naming_series, set_doctype_property
 
 
 def before_app_uninstall(app_name):
@@ -17,3 +16,5 @@ def before_uninstall():
     click.secho('Sad that You are gone!', fg='yellow')
     click.secho('Restore Naming Series for DocTypes to default value in ERPNext...', fg='yellow')
     change_naming_series(action='uninstall')
+    click.secho('Restore some DocTypes default value...', fg='yellow')
+    set_doctype_property(action='uninstall')
