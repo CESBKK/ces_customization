@@ -156,7 +156,7 @@
 {
     "category": "Volume",
     "from_uom": "FOZ",
-    "to_uom": "ออนซ์หน่วยวัดของเหลว US",
+    "to_uom": "ออนซ์ US",
     "abbr": "FOZ",
     "value": "1"
 },
@@ -746,6 +746,18 @@
     "from_uom": "YD",
     "to_uom": "หลา",
     "abbr": "YD",
+    "value": "1"
+},
+{
+    "category": "Length",
+    "from_uom": "M",
+    "to_uom": "KM",
+    "value": "1000"
+},
+{
+    "category": "Length",
+    "from_uom": "Kilometer",
+    "to_uom": "KM",
     "value": "1"
 }
 ]

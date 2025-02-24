@@ -1,23 +1,19 @@
 import frappe
-from frappe.model.naming import determine_consecutive_week_number
-from frappe.utils import (
-    getdate,
-    # get_datetime
-)
+import re
+from frappe.utils import getdate
+from frappe.model.naming import getseries
+from ces_customization.custom.utils import populate_thai_date
 
 
 def parse_naming_series_variable(doc, variable):
-    if doc is None:
-        doc = doc('Payment Entry')
-
     date = getdate()
     date = doc.get('posting_date') or doc.get('transaction_date') or doc.get('date') or getdate()
     if isinstance(date, str):
         date = getdate(date)
 
     # Populate data base on date
-    result_ad = populate_serie(date=date)
-    result_be = populate_serie(date=date, year_type='BE')
+    result_ad = populate_thai_date(date=date)
+    result_be = populate_thai_date(date=date, year_type='BE')
 
     # return vairable result
     if variable == 'CES-YY' and doc:
@@ -104,21 +100,37 @@ def parse_naming_series_variable(doc, variable):
         return company_info_doc.get('abbr')
 
 
-def populate_serie(date, year_type='AD'):
-    # make sure that the supply posting date is in datetime type
-    # sometimes Frappe just return datetime as str
-    target_date = getdate(date)
-    result = {}
-    if year_type == 'AD':
-        result['yyyy'] = str(target_date.year)
-        result['yy'] = result['yyyy'][-2:]
-    else:
-        result['yyyy'] = str(int(target_date.year)+543)
-        result['yy'] = result['yyyy'][-2:]
+def ces_format_autoname(autoname: str, doc):
+    """
+    Generate autoname by replacing all instances of CES braced params (fields, date params e.g.
+    'CES-YY-BE', 'CES-MM', 'CES-YY' etc., series) Independent of remaining string or separators.
 
-    result['ww'] = str(determine_consecutive_week_number(target_date)).zfill(2)
+    Example pattern: 'format:LOG-{MM}-{fieldname1}-{fieldname2}-{#####}'
 
-    result['mm'] = str(target_date.month).zfill(2)
+    Base on frappe.model.naming._format_autoname()
+    """
 
-    result['dd'] = str(target_date.day).zfill(2)
-    return result
+    BRACED_PARAMS_PATTERN = re.compile(r'(\{[\w\- | #]+\})')
+
+    def get_param_value_for_match(match):
+        param: str = match.group()
+        for part in [param[1:-1]]:
+            if part.startswith('CES'):
+                output = parse_naming_series_variable(doc=doc, variable=part)
+            elif part.startswith('#'):
+                # Technically this should be passed to frappe's default processor
+                # but there is a bug as serie_name is blank and yield unexpected result.
+                # if it is fixed later on, we can remove this branch.
+                serie_name = f'CES-{doc.get("doctype")}'
+                digits = len(part)
+                output = getseries(serie_name, digits)
+            else:
+                # left over which are frappe's default i.e. {MM} {DD} {YY}
+                # We will pass this to _format_autoname.
+                output = '{' + part + '}'
+        return output
+
+    # Replace braced params with their parsed value
+    name = BRACED_PARAMS_PATTERN.sub(get_param_value_for_match, autoname)
+
+    return name

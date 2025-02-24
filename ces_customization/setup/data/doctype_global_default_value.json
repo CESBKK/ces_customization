@@ -1,0 +1,32 @@
+[
+{
+    "doctype": "Selling Settings",
+    "key": "cust_master_name",
+    "default": "Customer Name",
+    "ces_custom": "Auto Name"
+},
+{
+    "doctype": "Buying Settings",
+    "key": "supp_master_name",
+    "default": "Supplier Name",
+    "ces_custom": "Auto Name"
+},
+{
+    "doctype": "Global Defaults",
+    "key": "hide_currency_symbol",
+    "default": "",
+    "ces_custom": "Yes"
+},
+{
+    "doctype": "Global Defaults",
+    "key": "default_distance_unit",
+    "default": "",
+    "ces_custom": "KM"
+},
+{
+    "doctype": "Stock Settings",
+    "key": "stock_uom",
+    "default": "Nos",
+    "ces_custom": "EA"
+}
+]

@@ -2,8 +2,7 @@ import click
 import json
 import frappe
 from frappe import _
-from frappe.custom.doctype.property_setter.property_setter import \
-    make_property_setter
+from frappe.custom.doctype.property_setter.property_setter import make_property_setter
 
 
 def after_install():
@@ -11,8 +10,10 @@ def after_install():
         # make_custom_fields()
         click.secho('Update Naming Series for DocTypes in ERPNext...', fg='yellow')
         change_naming_series()
-        click.secho('Add GFMIS UOMs...', fg='yellow')
+        click.secho('Add Thailand GFMIS\'s Unit of Measurments...', fg='yellow')
         add_uom_data()
+        click.secho('Set some DocType Default Value...', fg='yellow')
+        set_doctype_property()
         click.secho('Thank you for installing CES Customization!', fg='green')
     except Exception as e:
         BUG_REPORT_URL = 'https://github.com/CESBKK/ces_customization/issues/new'
@@ -45,6 +46,45 @@ def naming_series_property_setter(doctype,
                          value,
                          'Text',
                          validate_fields_for_doctype=validate_fields)
+
+
+def set_doctype_property(action: str = 'install'):
+    if action == 'install':
+        target = 'ces_custom'
+    else:
+        target = 'default'
+
+    doctype_global_default_value = json.loads(
+        open(
+            frappe.get_app_path('ces_customization', 'setup', 'data', 'doctype_global_default_value.json')
+        ).read()
+    )
+
+    for d in doctype_global_default_value:
+        doctype = d.get('doctype')
+        key = d.get('key')
+        value = d.get(target)
+        frappe.client.set_value(doctype, doctype, key, value)
+
+    doctype_naming_data = json.loads(
+        open(
+            frappe.get_app_path('ces_customization', 'setup', 'data', 'doctype_naming_data.json')
+        ).read()
+    )
+
+    for d in doctype_naming_data:
+        doctype = d.get('doctype')
+        property = d.get('property')
+        fieldname = None
+        value = d.get(target)
+        type = d.get('type')
+        for_doctype = True
+        make_property_setter(doctype,
+                             fieldname,
+                             property,
+                             value,
+                             type,
+                             for_doctype)
 
 
 def change_naming_series(action: str = 'install', module: str = 'erpnext'):
@@ -86,7 +126,6 @@ def add_uom_data():
     add Thai UOM หน่วยนับที่ใช้สำหรับจัดทำใบสั่งซื้อ บส.01 ในระบบ GFMIS
     Except:
     - CUP, DAY, KG - existed in erpnext default.
-    - HR. - already had 'H' for 'ชั่วโมง'
 
     Note: UOMs are imported only. No uninstallation when app uninstalled.
     '''
@@ -96,7 +135,10 @@ def add_uom_data():
         ).read()
     )
     for d in uoms:
-        if not frappe.db.exists('UOM', _(d.get('uom_name'))):
+        if not frappe.db.exists(
+            'UOM',
+            {'name': _(d.get('uom')), 'uom_name': _(d.get('uom_name'))},
+        ):
             frappe.get_doc(
                 {
                     'doctype': 'UOM',
