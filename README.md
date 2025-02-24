@@ -2,13 +2,16 @@
 
 Customization for Thailand
 
-ces_customization provide access to additional naming series variables and UOM from Thailand Goverment's standard.
+By installing ces_customization, it provides access to additional naming series variables and UOM from Thailand Goverment's standard and a couple of neat tweaks.  Here are a list of available fucntions:
+1. [Additional Naming Series Variable](#naming_series)
+2. [Thailand's GFMIS Unit of Measurements](#gfmis_uoms)
+3. [One-time Customers and One-time Vendors](#onetime)
 
-## Naming Series Variables:
+### <a name="naming_series"></a>Naming Series Variables:
+---
+#### From CES Customization:
 
-### From CES Customization:
-
-Base on posting date or document date or transactional date. Varibale with BE will return year in Bhudist Era or AD+543.
+Base on posting date or document date or transactional date. Varibale with BE will return year in Bhudist Era or AD+543.  CES variables also can be used in naming expression for Auto Name by putting them in {-} e.g. format:CUST-{CES-YYMM-BE}{#####}
 - .CES-YY.
 - .CES-YYYY.
 - .CES-YY-BE.
@@ -24,8 +27,7 @@ Base on posting date or document date or transactional date. Varibale with BE wi
 - .CES-JV-TYPE.   - Special for entry_type field or Journal Entry DocType.
 - .CES-COM-ABBR.  - Company's Abbreviated Name
 
-
-### From ERPNext:
+#### From ERPNext:
 
 Base on current transactional date.
 - .YYYY.
@@ -36,7 +38,7 @@ Base on current transactional date.
 - .FY.
 - .{fieldname}.
 
-### From [ERPNext Thailand](https://github.com/ecosoft-frappe/erpnext_thailand):
+#### From [ERPNext Thailand](https://github.com/ecosoft-frappe/erpnext_thailand):
 
 Base on posting date or document date or transactional date.
 - .YYYY-DATE.
@@ -45,17 +47,24 @@ Base on posting date or document date or transactional date.
 - .DD-DATE.
 - .WW-DATE.
 
-
-## UOMs from Thailand's GFMIS
-
+### <a name="gfmis_uoms"></a>UOMs from Thailand's GFMIS
+---
 Add Thai UOMs based on goverment's standard หน่วยนับที่ใช้สำหรับจัดทำใบสั่งซื้อ บส.01 ในระบบ GFMIS
-Except:
-- CUP, DAY, KG - existed in erpnext default.
-- HR. - already had 'H' for 'ชั่วโมง'
 
 Note: UOMs are imported only. No uninstallation when app uninstalled.
 
 
-#### License
+### <a name="onetime"></a>One-time Customers and One-time Vendors
+---
++ One-time Customers (CZZZ-999999999)
+
+    
+    Benefits:
+    Using one-time customer functionality helps streamline the sales process for occasional transactions while minimizing unnecessary data entry.
++ 
+
+### License
 
 mit
+
+Copyright (c) 2025-present, Cloud Engineering and Services Company Limited
