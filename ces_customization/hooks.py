@@ -302,10 +302,10 @@ fixtures = [
     },
     {
         "dt": "Customer",
-        "filters": [["customer_name", "=", "One-time Customers"]]
+        "filters": [["customer_name", "=", "One-time Customer"]]
     },
     {
         "dt": "Supplier",
-        "filters": [["supplier_name", "=", "One-time Vendors"]]
+        "filters": [["supplier_name", "=", "One-time Vendor"]]
     }
 ]
