@@ -2,7 +2,6 @@ import click
 import json
 import frappe
 from frappe import _
-from frappe.defaults import set_global_default
 from frappe.custom.doctype.property_setter.property_setter import make_property_setter
 
 
@@ -11,7 +10,7 @@ def after_install():
         # make_custom_fields()
         click.secho('Update Naming Series for DocTypes in ERPNext...', fg='yellow')
         change_naming_series()
-        click.secho('Add GFMIS UOMs...', fg='yellow')
+        click.secho('Add Thailand GFMIS\'s Unit of Measurments...', fg='yellow')
         add_uom_data()
         click.secho('Set some DocType Default Value...', fg='yellow')
         set_doctype_property()
@@ -55,22 +54,18 @@ def set_doctype_property(action: str = 'install'):
     else:
         target = 'default'
 
-    # Default value setter seems bug.  Please recheck settings again.
-    # - Buying Setting
-    # - Selling Setting
-    # - Stock Setting
-    doctype_naming_default_value = json.loads(
+    doctype_global_default_value = json.loads(
         open(
-            frappe.get_app_path('ces_customization', 'setup', 'data', 'doctype_naming_default_value.json')
+            frappe.get_app_path('ces_customization', 'setup', 'data', 'doctype_global_default_value.json')
         ).read()
     )
 
-    for d in doctype_naming_default_value:
+    for d in doctype_global_default_value:
+        doctype = d.get('doctype')
         key = d.get('key')
         value = d.get(target)
-        set_global_default(key, value)
+        frappe.client.set_value(doctype, doctype, key, value)
 
-    # Doctype Naming works flawlessly
     doctype_naming_data = json.loads(
         open(
             frappe.get_app_path('ces_customization', 'setup', 'data', 'doctype_naming_data.json')
