@@ -4,11 +4,10 @@ Customization for Thailand
 
 By installing ces_customization, it provides access to additional naming series variables and UOM from Thailand Goverment's standard and a couple of neat tweaks.  Here are a list of available fucntions:
 
-1. [Custom Virtual DocField](#virtual)
-2. [Additional Naming Series Variable](#naming_series_variable)
+1. [Additional Naming Series Variable](#naming_series_variable)
 3. [Document Naming Series](#naming_series)
-4. [Thailand's GFMIS Unit of Measurements](#gfmis_uoms)
-5. [One-time Customers and One-time Vendors](#onetime)
+3. [Thailand's GFMIS Unit of Measurements](#gfmis_uoms)
+4. [One-time Customers and One-time Vendors](#onetime)
 
 ### <a name="install"></a>Installation
 ---
@@ -35,14 +34,6 @@ bench --site <<site-name>> install-app ces_customization
 ```
 bench --site <<site-name>> uninstall-app ces_customization
 ```
-
-<div style="text-align: right;">
-<a href="#">Back to top</a>
-</div>
-
-### <a name="virtual"></a>Custom Virtual DocField
----
-Mostly date related currently available for Payment Entry and Journal Entry DocType.
 
 <div style="text-align: right;">
 <a href="#">Back to top</a>

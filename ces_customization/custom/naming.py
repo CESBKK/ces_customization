@@ -98,7 +98,7 @@ def parse_naming_series_variable(doc, variable):
     if variable == 'CES-COM-ABBR' and doc:
         abbr = frappe.db.get_value(
             doctype='Company',
-            filters={'company': doc.get('company')},
+            filters={'company_name': frappe.defaults.get_user_default("Company")},
             fieldname='abbr')
         return abbr
 
