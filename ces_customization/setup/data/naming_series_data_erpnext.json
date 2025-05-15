@@ -148,7 +148,7 @@
     "doctype": "Purchase Receipt",
     "fieldname": "naming_series",
     "default": "MAT-PRE-.YYYY.-\nMAT-PR-RET-.YYYY.-",
-    "ces_custom": "MAT-CES-YYMM-BE-.YYYY.-\nMAT-PRE-RET-.CES-YYMM-BE.-"
+    "ces_custom": "MAT-PRE-.CES-YYMM-BE.-\nMAT-PR-RET-.CES-YYMM-BE.-"
 },
 {
     "doctype": "Quality Inspection",

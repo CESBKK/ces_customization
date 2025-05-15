@@ -47,10 +47,10 @@ required_apps = ["erpnext"]
 
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
-doctype_js = {
-    "Journal Entry": "public/js/journal_entry.js",
-    "Payment Entry": "public/js/payment_entry.js",
-}
+# doctype_js = {
+#     "Journal Entry": "public/js/journal_entry.js",
+#     "Payment Entry": "public/js/payment_entry.js",
+# }
 
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
@@ -146,8 +146,8 @@ before_app_uninstall = "ces_customization.setup.uninstall.before_app_uninstall"
 # }
 
 override_doctype_class = {
-    "Journal Entry": "ces_customization.overrides.journal_entry.ces_JournalEntry",
-    "Payment Entry": "ces_customization.overrides.payment_entry.ces_PaymentEntry",
+    # "Journal Entry": "ces_customization.overrides.journal_entry.ces_JournalEntry",
+    # "Payment Entry": "ces_customization.overrides.payment_entry.ces_PaymentEntry",
     "Customer": "ces_customization.overrides.customer.ces_Customer",
     "Supplier": "ces_customization.overrides.supplier.ces_Supplier",
 }
@@ -293,10 +293,10 @@ naming_series_variables = {
 }
 
 fixtures = [
-    {
-        "dt": "Custom Field",
-        "filters": [["fieldname", "like", "ces%"]]
-    },
+    # {
+    #     "dt": "Custom Field",
+    #     "filters": [["fieldname", "like", "ces%"]]
+    # },
     {
         "dt": "Bank"
     },

@@ -6,6 +6,9 @@ from ces_customization.custom.utils import populate_thai_date
 
 
 def parse_naming_series_variable(doc, variable):
+    if doc is None:
+        doc = frappe.get_doc('Customer', 'CZZZ-999999999')
+
     date = getdate()
     date = doc.get('posting_date') or doc.get('transaction_date') or doc.get('date') or getdate()
     if isinstance(date, str):
