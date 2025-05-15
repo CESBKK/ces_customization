@@ -6,6 +6,9 @@ from ces_customization.custom.utils import populate_thai_date
 
 
 def parse_naming_series_variable(doc, variable):
+    if doc is None:
+        doc = frappe.get_doc('Customer', 'CZZZ-999999999')
+
     date = getdate()
     date = doc.get('posting_date') or doc.get('transaction_date') or doc.get('date') or getdate()
     if isinstance(date, str):
@@ -93,11 +96,11 @@ def parse_naming_series_variable(doc, variable):
         return result
 
     if variable == 'CES-COM-ABBR' and doc:
-        # doc is current doc we are working on
-        # company_info_doc is another doc that contain Company Information
-        # in this case company_info_doc => Doctype Company which contain abbr field.
-        company_info_doc = frappe.get_doc('Company', doc.get('company'))
-        return company_info_doc.get('abbr')
+        abbr = frappe.db.get_value(
+            doctype='Company',
+            filters={'company': doc.get('company')},
+            fieldname='abbr')
+        return abbr
 
 
 def ces_format_autoname(autoname: str, doc):
