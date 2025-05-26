@@ -6,8 +6,8 @@ def populate_thai_date(date, year_type='AD'):
     # make sure that the supply posting date is in datetime type
     # sometimes Frappe just return datetime as str
     target_date = getdate(date)
-    month_l = 'x มกราคม กุมภาพันธ์ มีนาคม เมษายน พฤษภาคม มิถุนายน กรกฎาคม กันยายน ตุลาคม พฤศจิกายน ธันวาคม'
-    month_s = 'x ม.ค. ก.พ. มี.ค. เม.ย. พ.ค. มิ.ย. ก.ค. ก.ย. ต.ค. พ.ย. ธ.ค.'
+    month_l = 'x มกราคม กุมภาพันธ์ มีนาคม เมษายน พฤษภาคม มิถุนายน กรกฎาคม สิงหาคม กันยายน ตุลาคม พฤศจิกายน ธันวาคม'
+    month_s = 'x ม.ค. ก.พ. มี.ค. เม.ย. พ.ค. มิ.ย. ก.ค. ส.ค. ก.ย. ต.ค. พ.ย. ธ.ค.'
     result = {}
 
     if year_type == 'AD':
